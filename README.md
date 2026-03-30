@@ -1,4 +1,4 @@
-# 🌊 Showcase: Agente Amazô | Encontro d'Água Hub
+# Showcase: Agente Amazô | Encontro d'Água Hub
 
 ![Status](https://img.shields.io/badge/status-concluído-brightgreen?style=for-the-badge)
 ![Deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-blue?style=for-the-badge)
@@ -10,7 +10,7 @@
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 Este repositório contém o **portfólio vivo da Amazô**, a Inteligência Artificial e SDR (Sales Development Representative) do **Encontro d'Água Hub**. A página demonstra, na prática, o poder e as funcionalidades dos agentes de IA desenvolvidos para pequenos negócios e projetos sociais.
 
@@ -27,7 +27,7 @@ Este repositório contém o **portfólio vivo da Amazô**, a Inteligência Artif
 
 ---
 
-## 🎯 Briefing Executivo
+## Briefing Executivo
 
 ### O Desafio Estratégico
 
@@ -45,7 +45,7 @@ Democratizar a tecnologia de IA, construindo agentes sob medida para pequenos ne
 
 ---
 
-## 🛠️ Recursos e Funcionalidades
+## Recursos e Funcionalidades
 
 ### Core Features
 
@@ -61,7 +61,7 @@ Democratizar a tecnologia de IA, construindo agentes sob medida para pequenos ne
 
 ---
 
-## 🧪 Análise de Qualidade (QA)
+## Análise de Qualidade (QA)
 
 ### Resultado Geral: ✅ **APROVADO**
 
@@ -78,13 +78,13 @@ Democratizar a tecnologia de IA, construindo agentes sob medida para pequenos ne
 
 #### Pontos de Atenção (Monitoramento Contínuo)
 
-- 🔍 **Base de Conhecimento**: Monitorar atualizações frequentes assim que o Supabase for totalmente integrado
-- 🔍 **Redirecionamento de Contexto**: Validar gatilhos para redirecionar conversas fora do escopo
-- 🔍 **Analytics**: Implementar rastreamento de interações para otimizar ROI
+- **Base de Conhecimento**: Monitorar atualizações frequentes assim que o Supabase for totalmente integrado
+- **Redirecionamento de Contexto**: Validar gatilhos para redirecionar conversas fora do escopo
+- **Analytics**: Implementar rastreamento de interações para otimizar ROI
 
 ---
 
-## 📱 Demonstração
+## Demonstração
 
 ### Como Usar
 
@@ -96,7 +96,7 @@ Democratizar a tecnologia de IA, construindo agentes sob medida para pequenos ne
 
 ---
 
-## 🔄 Processo Heutagógico de 4 Etapas
+## Processo Heutagógico de 4 Etapas
 
 O desenvolvimento segue a metodologia proprietária do Hub:
 
@@ -107,7 +107,7 @@ O desenvolvimento segue a metodologia proprietária do Hub:
 
 ---
 
-## 👩‍💻 Desenvolvimento
+## Desenvolvimento
 
 | Aspecto | Responsável |
 | --- | --- |
@@ -117,7 +117,7 @@ O desenvolvimento segue a metodologia proprietária do Hub:
 
 ---
 
-## 🔗 Links Essenciais
+## Links Essenciais
 
 - **[Acessar Showcase Amazô (GitHub Pages)](https://lidimoura.github.io/amazo.ia-showcase/)** - Falar agora com a Amazô
 - **[Catálogo de Serviços do Hub](https://hub.encontrodagua.com)** - Conheça todos os combos
@@ -126,13 +126,13 @@ O desenvolvimento segue a metodologia proprietária do Hub:
 
 ---
 
-## 📝 Nota de Transparência & Heutagogia
+## Nota de Transparência & Heutagogia
 
 Este projeto foi idealizado, arquitetado e validado por mim, **Lídi Moura**, aplicando o conceito de **"Vibe Coding"** e **pair programming com Inteligência Artificial**. A IA foi utilizada como suporte para:
 
-- 🤖 Refatoração e otimização do código
-- 🤖 Sugestões de melhorias arquiteturais
-- 🤖 Pair programming colaborativo
+- Refatoração e otimização do código
+- Sugestões de melhorias arquiteturais
+- Pair programming colaborativo
 
 Enquanto isso, sob **minha gestão técnica e aprendizado contínuo** permanecem:
 
