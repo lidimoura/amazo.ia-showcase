@@ -50,6 +50,7 @@ main { padding-top: 80px; }
 .hero-section { min-height: 60vh; display: flex; align-items: center; justify-content: center; gap: 2rem; text-align: left; padding: 4rem 5%; flex-wrap: wrap;}
 .hero-content { max-width: 600px; }
 .hero-image img { width: 300px; height: 300px; object-fit: cover; border-radius: 50%; border: 3px solid var(--acai-purple); box-shadow: 0 0 20px rgba(200, 120, 255, 0.3);}
+.profile-img { width: 250px !important; border-radius: 16px !important; border: 2px solid var(--acai-purple) !important; }
 .content-section { max-width: 1000px; margin: 0 auto; padding: 4rem 2rem; }
 
 /* Botões do Hero */
@@ -73,6 +74,7 @@ main { padding-top: 80px; }
 
 /* Rodapé e Nota de Transparência */
 footer { text-align: center; padding: 2rem; border-top: 1px solid var(--card-border); font-size: 0.9rem; color: var(--text-secondary); background: rgba(10, 14, 39, 0.8);}
+.footer-note { margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto; }
 .transparency-note { max-width: 800px; margin: 1.5rem auto 0; padding: 1rem; background: rgba(240, 184, 100, 0.1); border-left: 3px solid var(--areia-gold); border-radius: 4px; text-align: left; font-size: 0.85rem;}
 .transparency-note strong { color: var(--areia-gold); }
 
