@@ -1,34 +1,125 @@
-# 🌊 Showcase: Agente Amazô | Encontro d'Água Hub
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Amazô - Portfólio e Guia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
 
-![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen?style=for-the-badge)
+    <header class="main-header">
+        <div class="logo">✨ Encontro d'Água Hub</div>
+        <nav>
+            <a href="#hero">Início</a>
+            <a href="#presentation">Briefing</a>
+            <a href="#features">Recursos</a>
+            <a href="#qa">Análise de QA</a>
+            <a href="#onboarding">Metodologia</a>
+        </nav>
+    </header>
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Showcase: Agente Amazô</h1>
+                <p>O portfólio vivo do Encontro d'Água Hub. Conheça a nossa Concierge Digital que atua como SDR e descubra como podemos criar uma Inteligência Artificial exclusiva para otimizar o tempo do seu negócio.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5592900000000?text=Olá%20Amazô!%20Vim%20pelo%20Showcase." target="_blank" rel="noopener noreferrer" class="cta-button primary">Falar com a Amazô</a>
+                    <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary">Catálogo de Serviços</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/amazo.jpg" alt="Agente Amazô - Ângulo Médio" class="profile-img fade-in" style="width: 250px; border-radius: 16px; border: 2px solid var(--acai-purple);">
+            </div>
+        </section>
 
-Este repositório contém o portfólio vivo da **Amazô**, a Inteligência Artificial e SDR do Encontro d'água hub. A página demonstra, na prática, o poder e as funcionalidades dos agentes de IA desenvolvidos para os nossos clientes.
+        <section id="presentation" class="content-section fade-in">
+             <h2>Apresentação e Briefing do Projeto</h2>
+            <div class="card">
+                <h3>O Desafio Estratégico</h3>
+                <p>Criar um portfólio vivo que demonstre a capacidade de automação do Hub. A Amazô não é apenas um chatbot; é uma SDR (Sales Development Representative — representante de desenvolvimento de vendas) que qualifica leads, apresenta o Link d'Água e converte interessados em clientes reais, usando uma linguagem humana e acessível.</p>
+            </div>
+        </section>
 
----
+        <section id="features" class="content-section fade-in">
+            <h2>Recursos e Funcionalidades</h2>
+            <div class="card-container">
+                 <div class="card">
+                    <h4>Integração Humano-IA</h4>
+                    <p>Transição suave da conversa com o assistente virtual para a equipe humana no WhatsApp, sem atritos.</p>
+                </div>
+                <div class="card">
+                    <h4>Compreensão Contextual</h4>
+                    <p>Agentes que fogem de fluxos engessados, entendendo o contexto real e adaptando as respostas.</p>
+                </div>
+                <div class="card">
+                    <h4>Modo Concierge</h4>
+                    <p>A identidade, regras de negócio e tom de voz configurados 100% por nós para refletir sua marca.</p>
+                </div>
+                <div class="card">
+                    <h4>Recepção e SAC 24/7</h4>
+                    <p>A IA tira dúvidas frequentes, acolhe leads e informa horários ou links a qualquer momento.</p>
+                </div>
+            </div>
+        </section>
 
-## Sobre o Projeto
+        <section id="qa" class="content-section fade-in">
+            <h2>Análise de Qualidade (QA) - Transparência</h2>
+             <div class="card">
+                <h3>Garantia de Qualidade</h3>
+                <p>Os testes de homologação demonstram que a Amazô cumpre perfeitamente seu papel de SDR, capturando os dados e conduzindo a venda com precisão.</p>
+            </div>
+            <div class="card-container">
+                <div class="card qa-card">
+                    <h4>Aprovado</h4>
+                    <ul>
+                        <li>Identidade visual "Tech Amazônico" (Dark Mode) aplicada com sucesso.</li>
+                        <li>Fluxo de conversão (Coleta de nome/interesse) funcional.</li>
+                        <li>Redirecionamento para o WhatsApp da CEO/SuperAdmin operacional.</li>
+                    </ul>
+                </div>
+                <div class="card qa-card-reprovado">
+                    <h4>Em Monitoramento (Observação)</h4>
+                    <p>Monitorar a base de conhecimento para incluir detalhes do GuIA Amazônico assim que o banco de dados do Supabase for integrado.</p>
+                </div>
+            </div>
+        </section>
 
-* **Empresa:** Encontro d'Água Hub
-* **Produto Demonstrado:** Criação de assistentes de IA e Concierge digital para pequenos negócios.
-* **Metodologia:** Processo de 4 Etapas (Diagnóstico > Implementação > QA > Entrega).
+        <section id="onboarding" class="content-section fade-in">
+            <h2>Processo Heutagógico de 4 Etapas</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h4>1. Diagnóstico e Briefing</h4>
+                    <p>Entendemos sua dor, o tempo que você perde e mapeamos a personalidade da sua IA.</p>
+                </div>
+                <div class="card">
+                    <h4>2. Implementação</h4>
+                    <p>Construímos a arquitetura de ponta a ponta no formato Modo Concierge (Feito para Você).</p>
+                </div>
+                <div class="card">
+                    <h4>3. Provad'água (QA)</h4>
+                    <p>Você testa e valida o fluxo da IA diretamente no seu celular antes do lançamento oficial.</p>
+                    <img src="./assets/mazo.jpg" alt="Amazô Closeup" class="onboarding-image">
+                </div>
+                <div class="card">
+                    <h4>4. Showcase e Entrega</h4>
+                    <p>Entrega oficial da sua Concierge Digital e acompanhamento do seu ROI (Retorno sobre Investimento).</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-## Desenvolvimento
+    <footer>
+        <p>Projeto Amazô | Showcase desenvolvido pelo Encontro d'Água Hub</p>
+        <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
+            <p><strong>Nota de Transparência:</strong> Este projeto foi idealizado, arquitetado e validado por mim, Lidi Moura. A IA foi utilizada como suporte de *pair programming* para acelerar o código, enquanto a gestão técnica e as integrações permanecem sob meu aprendizado contínuo (Heutagogia) em Data Science.</p>
+        </div>
+    </footer>
 
-* **Arquiteta de soluções, dev full-stack & especialista em Data Science (ONE):** [Lídi Moura](https://www.linkedin.com/in/lidimoura/)
-
----
-
-## Links Essenciais
-
-* **[Acessar Catálogo de Serviços do Hub](https://hub.encontrodagua.com)**
-* **[Falar Diretamente com a Amazô (Em breve)](https://wa.me/5592900000000?text=Olá%20Amazô!%20Vim%20pelo%20Showcase.)**
-
----
-
-## Nota de Transparência & Heutagogia
-
-Este projeto foi idealizado, arquitetado e validado por mim, Lídi Moura, aplicando o conceito de "Vibe Coding" e pair programming com Inteligência Artificial. A IA foi utilizada como suporte para a refatoração e otimização do código, enquanto o direcionamento estratégico, as regras de negócio e a integração das ferramentas (n8n, Supabase, Vercel, React) permanecem sob minha gestão técnica e aprendizado contínuo na área de Data Science e Automação. Acreditamos na IA como aliada do desenvolvimento humano, não como substituta.
+    <script src="./script.js"></script>
+</body>
+</html>
