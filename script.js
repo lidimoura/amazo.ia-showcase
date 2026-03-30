@@ -38,4 +38,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Controle do Modal do Chatbot
+    const chatbotModal = document.getElementById('chatbot-modal');
+    const chatbotClose = document.querySelector('.chatbot-close');
+
+    // Abrir chatbot
+    window.openChatbot = function() {
+        chatbotModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    // Fechar chatbot ao clicar no botão de fechar
+    chatbotClose.addEventListener('click', function() {
+        chatbotModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Fechar chatbot ao clicar fora do container
+    chatbotModal.addEventListener('click', function(e) {
+        if (e.target === chatbotModal) {
+            chatbotModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Fechar chatbot com tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && chatbotModal.classList.contains('active')) {
+            chatbotModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
 });
+

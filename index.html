@@ -12,7 +12,7 @@
 <body>
 
     <header class="main-header">
-        <div class="logo">✨ Encontro d'Água Hub</div>
+        <div class="logo">Encontro d'água hub</div>
         <nav>
             <a href="#hero">Início</a>
             <a href="#presentation">Briefing</a>
@@ -26,14 +26,14 @@
         <section id="hero" class="hero-section">
             <div class="hero-content">
                 <h1>Showcase: Agente Amazô</h1>
-                <p>O portfólio vivo do Encontro d'Água Hub. Conheça a nossa Concierge Digital que atua como SDR e descubra como podemos criar uma Inteligência Artificial exclusiva para otimizar o tempo do seu negócio.</p>
+                <p>O portfólio vivo do Encontro d'água hub. Conheça a nossa concierge digital que atua como SDR e descubra como podemos criar uma inteligência artificial exclusiva para otimizar o tempo do seu negócio.</p>
                 <div class="hero-buttons">
-                    <a href="https://wa.me/5592900000000?text=Olá%20Amazô!%20Vim%20pelo%20Showcase." target="_blank" rel="noopener noreferrer" class="cta-button primary">Falar com a Amazô</a>
+                    <button class="cta-button primary" onclick="openChatbot()">Falar com a Amazô</button>
                     <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary">Catálogo de Serviços</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="./assets/amazo.jpg" alt="Agente Amazô - Ângulo Médio" class="profile-img fade-in">
+                <img src="./assets/amazo.jpeg" alt="Agente Amazô - imagem de uma mulher digital com cabelos longos e trajes simples e de materiais naturais" class="profile-img fade-in">
             </div>
         </section>
 
@@ -103,7 +103,7 @@
                 <div class="card">
                     <h4>3. Provad'água (QA)</h4>
                     <p>Você testa e valida o fluxo da IA diretamente no seu celular antes do lançamento oficial.</p>
-                    <img src="./assets/mazo.jpg" alt="Amazô Closeup" class="onboarding-image">
+                    <img src="./assets/mazo.jpeg" alt="Amazô Closeup" class="onboarding-image">
                 </div>
                 <div class="card">
                     <h4>4. Showcase e Entrega</h4>
@@ -113,10 +113,22 @@
         </section>
     </main>
 
+    <!-- Modal do Chatbot -->
+    <div id="chatbot-modal" class="chatbot-modal">
+        <div class="chatbot-container">
+            <button class="chatbot-close" aria-label="Fechar chatbot">&times;</button>
+            <iframe
+              title="Typebot Amazô"
+              src="https://typebot.co/template-chatbot-amazo-landigpage"
+              class="chatbot-iframe"
+            ></iframe>
+        </div>
+    </div>
+
     <footer>
         <p>Projeto Amazô | Showcase desenvolvido pelo Encontro d'Água Hub</p>
         <div class="footer-note">
-            <p><strong>Nota de Transparência:</strong> Este projeto foi idealizado, arquitetado e validado por mim, Lidi Moura. A IA foi utilizada como suporte de <em>pair programming</em> para acelerar o código, enquanto a gestão técnica e as integrações permanecem sob meu aprendizado contínuo (Heutagogia) em Data Science.</p>
+            <p><strong>Nota de Transparência:</strong> Este projeto foi idealizado, arquitetado e validado por mim, Lídi Moura. A IA foi utilizada como suporte de <em>pair programming</em> para acelerar o código, enquanto a gestão técnica e as integrações permanecem sob meu aprendizado contínuo (Heutagogia) em Data Science.</p>
         </div>
     </footer>
 
