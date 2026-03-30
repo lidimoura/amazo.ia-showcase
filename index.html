@@ -28,7 +28,7 @@
                 <h1>Showcase: Agente Amazô</h1>
                 <p>O portfólio vivo do Encontro d'água hub. Conheça a nossa concierge digital que atua como SDR e descubra como podemos criar uma inteligência artificial exclusiva para otimizar o tempo do seu negócio.</p>
                 <div class="hero-buttons">
-                    <button class="cta-button primary" onclick="openChatbot()">Falar com a Amazô</button>
+                    <button class="cta-button primary" onclick="window.Typebot?.toggle()">Falar com a Amazô</button>
                     <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary">Catálogo de Serviços</a>
                 </div>
             </div>
@@ -112,18 +112,6 @@
             </div>
         </section>
     </main>
-
-    <!-- Modal do Chatbot -->
-    <div id="chatbot-modal" class="chatbot-modal">
-        <div class="chatbot-container">
-            <button class="chatbot-close" aria-label="Fechar chatbot">&times;</button>
-            <iframe
-              title="Typebot Amazô"
-              src="https://typebot.co/template-chatbot-amazo-landigpage"
-              class="chatbot-iframe"
-            ></iframe>
-        </div>
-    </div>
 
     <footer>
         <p>Projeto Amazô | Showcase desenvolvido pelo Encontro d'Água Hub</p>

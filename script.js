@@ -38,37 +38,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Controle do Modal do Chatbot
-    const chatbotModal = document.getElementById('chatbot-modal');
-    const chatbotClose = document.querySelector('.chatbot-close');
+    // Carregar Typebot Bubble
+    const typebotInitScript = document.createElement("script");
+    typebotInitScript.type = "module";
+    typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
 
-    // Abrir chatbot
-    window.openChatbot = function() {
-        chatbotModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    };
-
-    // Fechar chatbot ao clicar no botão de fechar
-    chatbotClose.addEventListener('click', function() {
-        chatbotModal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    });
-
-    // Fechar chatbot ao clicar fora do container
-    chatbotModal.addEventListener('click', function(e) {
-        if (e.target === chatbotModal) {
-            chatbotModal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-    });
-
-    // Fechar chatbot com tecla ESC
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && chatbotModal.classList.contains('active')) {
-            chatbotModal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-    });
+Typebot.initBubble({
+  typebot: "template-chatbot-amazo-landigpage",
+  theme: {
+    button: {
+      backgroundColor: "#303235",
+      customIconSrc:
+        "https://s3.typebot.io/public/workspaces/cmcppn5am0002jx04z0h8go9a/typebots/al5llo2evf2ahjg5u4valfnc/bubble-icon?v=1774872970028",
+    },
+    chatWindow: { backgroundColor: "#F8F8F8" },
+  },
+});`;
+    document.body.append(typebotInitScript);
 
 });
 

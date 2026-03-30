@@ -130,10 +130,10 @@ window.openChatbot = function() {
 
 ### Componentes
 
-```
+```text
 index.html      → Estrutura semântica
 style.css       → Glassmorphism + Dark mode
-script.js       → Smooth scroll + Modal control
+script.js       → Smooth scroll + Typebot Bubble
 README.md       → Documentação principal
 DEVLOG.md       → Este arquivo
 ```
