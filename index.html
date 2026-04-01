@@ -7,12 +7,10 @@
     <meta name="description" content="Portfólio vivo da Amazô, IA-SDR do Encontro d'Água Hub. Metodologia Prova d'Água, Heutagogia e IA acessível para pequenos negócios. Desenvolvido por Lídi Moura, Dev Manauara.">
     <meta name="keywords" content="Amazô, IA, chatbot, SDR, Encontro d'Água Hub, Lidi Moura, Manaus, Heutagogia, Link d'Água, QR Code, CRM IA, Typebot">
     <meta name="author" content="Lídi Moura">
-    <!-- Open Graph -->
     <meta property="og:title" content="Showcase: Agente Amazô | Encontro d'Água Hub">
-    <meta property="og:description" content="Demo funcional da Amazô, a IA-SDR do Hub. Metodologia Prova d'Água em 5 dias. Desenvolvido pela Dev Manauara Lídi Moura.">
+    <meta property="og:description" content="Demo funcional da Amazô, IA-SDR do Hub. Metodologia Prova d'Água em 5 dias. Desenvolvido pela Dev Manauara Lídi Moura.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lidimoura.github.io/amazo.ia-showcase/">
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -21,287 +19,183 @@
 <body>
 
     <header class="main-header" role="banner">
-        <div class="logo" aria-label="Encontro d'Água Hub - Logotipo">
+        <div class="logo" aria-label="Encontro d'Água Hub">
             <span class="logo-icon">🌿</span> Encontro d'Água Hub
         </div>
         <nav aria-label="Navegação principal">
-            <a href="#hero" id="nav-inicio">Início</a>
-            <a href="#presentation" id="nav-briefing">Briefing</a>
-            <a href="#ecossistema" id="nav-eco">Ecossistema</a>
-            <a href="#features" id="nav-recursos">Recursos</a>
-            <a href="#prova-dagua" id="nav-prova">Metodologia</a>
-            <a href="#etica" id="nav-etica">Ética</a>
+            <a href="#hero"         id="nav-inicio"     data-i18n="nav.home">Início</a>
+            <a href="#presentation" id="nav-briefing"   data-i18n="nav.briefing">Briefing</a>
+            <a href="#ecossistema"  id="nav-eco"        data-i18n="nav.ecosystem">Ecossistema</a>
+            <a href="#features"     id="nav-recursos"   data-i18n="nav.features">Recursos</a>
+            <a href="#prova-dagua"  id="nav-prova"      data-i18n="nav.methodology">Metodologia</a>
+            <a href="#etica"        id="nav-etica"      data-i18n="nav.ethics">Ética</a>
         </nav>
+        <div class="lang-switcher" id="lang-switcher" role="group" aria-label="Language selector">
+            <button class="lang-btn active" data-lang="pt" id="lang-pt" aria-label="Português" aria-pressed="true">🇧🇷 PT</button>
+            <button class="lang-btn" data-lang="en" id="lang-en" aria-label="English" aria-pressed="false">🇺🇸 EN</button>
+            <button class="lang-btn" data-lang="es" id="lang-es" aria-label="Español" aria-pressed="false">🇪🇸 ES</button>
+        </div>
     </header>
 
     <main>
-        <!-- ===================== HERO ===================== -->
+        <!-- HERO -->
         <section id="hero" class="hero-section" aria-label="Seção principal">
             <div class="hero-content">
-                <div class="hero-badge">Certified Solution · Build Estável</div>
+                <div class="hero-badge" data-i18n="hero.badge">Certified Solution · Build Estável</div>
                 <h1>Showcase: Agente Amazô</h1>
-                <p class="hero-tagline">
+                <p class="hero-tagline" data-i18n-html="hero.tagline">
                     <em>O portfólio vivo do Encontro d'Água Hub.</em> Conheça a Amazô, nossa IA-SDR que
                     qualifica leads, apresenta o Link d'Água e converte interessados em clientes —
-                    com linguagem humana, acessível e 100% personalizada para o seu negócio.
+                    com linguagem humana, acessível e 100% personalizada.
                 </p>
-                <p class="hero-sub">
-                    <strong>EN:</strong> A living portfolio demonstrating AI-powered lead qualification and sales for small businesses. |
-                    <strong>ES:</strong> Portafolio vivo de IA para calificación de leads y ventas de pequeñas empresas.
+                <p class="hero-sub" data-i18n="hero.sub">
+                    Sistema trilíngue ativo: PT · EN · ES — Showcase global pronto para parceiros internacionais.
                 </p>
                 <div class="hero-buttons">
-                    <button id="btn-falar-amazo" class="cta-button primary" onclick="window.Typebot?.toggle()" aria-label="Abrir chat com a Amazô">
-                        🤖 Falar com a Amazô
-                    </button>
-                    <a id="btn-catalogo" href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary" aria-label="Acessar catálogo de serviços do Hub">
-                        🌐 Catálogo do Hub
-                    </a>
-                    <a id="btn-vitrine" href="https://link.encontrodagua.com/vitrine" target="_blank" rel="noopener noreferrer" class="cta-button tertiary" aria-label="Acessar Link d'Água vitrine">
-                        🔗 Link d'Água
-                    </a>
+                    <button id="btn-falar-amazo" class="cta-button primary" onclick="window.Typebot?.toggle()" aria-label="Abrir chat" data-i18n="hero.btn.chat">🤖 Falar com a Amazô</button>
+                    <a id="btn-catalogo" href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary" data-i18n="hero.btn.catalog">🌐 Catálogo do Hub</a>
+                    <a id="btn-vitrine" href="https://link.encontrodagua.com/vitrine" target="_blank" rel="noopener noreferrer" class="cta-button tertiary" data-i18n="hero.btn.link">🔗 Link d'Água</a>
                 </div>
                 <div class="hero-architect">
-                    <span>👩‍💻 Arquitetado por</span>
-                    <a href="https://www.linkedin.com/in/lidimoura/" target="_blank" rel="noopener noreferrer" id="link-linkedin-lidi">
-                        Lídi Moura — Dev Manauara
-                    </a>
+                    <span data-i18n="hero.architect">👩‍💻 Arquitetado por</span>
+                    <a href="https://www.linkedin.com/in/lidimoura/" target="_blank" rel="noopener noreferrer" id="link-linkedin-lidi">Lídi Moura — Dev Manauara</a>
                     <span>·</span>
-                    <a href="https://github.com/lidimoura" target="_blank" rel="noopener noreferrer" id="link-github-lidi">
-                        GitHub
-                    </a>
+                    <a href="https://github.com/lidimoura" target="_blank" rel="noopener noreferrer" id="link-github-lidi">GitHub</a>
                 </div>
             </div>
             <div class="hero-image" aria-hidden="true">
-                <img src="./assets/amazo.jpeg" alt="Agente Amazô — mulher digital inspirada na floresta amazônica, com cabelos longos e trajes de materiais naturais" class="profile-img fade-in">
+                <img src="./assets/amazo.jpeg" alt="Agente Amazô — mulher digital inspirada na floresta amazônica" class="profile-img fade-in" loading="lazy">
             </div>
         </section>
 
-        <!-- ===================== BRIEFING ===================== -->
+        <!-- BRIEFING -->
         <section id="presentation" class="content-section fade-in" aria-labelledby="briefing-title">
-            <h2 id="briefing-title">🌿 Briefing Estratégico | Strategic Briefing</h2>
+            <h2 id="briefing-title" data-i18n="briefing.h2">🌿 Briefing Estratégico</h2>
             <div class="card">
-                <h3>O Desafio Estratégico</h3>
-                <p>
-                    Criar um portfólio vivo que demonstre a capacidade de automação e IA do Hub. <strong>Lídi Moura</strong>,
-                    Dev e Arquiteta Manauara nascida em Manaus (AM), lidera este projeto inspirado na
-                    natureza amazônica: <em>abundância sem desperdício</em>. A Amazô não é um chatbot genérico —
-                    é uma <strong>SDR digital</strong> que qualifica leads, apresenta o Link d'Água e converte
-                    interessados em clientes reais.
-                </p>
-                <p>
-                    <strong>EN:</strong> Lídi Moura, a developer and solutions architect from Manaus (Amazon), leads this biomimetic project:
-                    tech that grows like a forest — generous, waste-free, regenerative. |
-                    <strong>ES:</strong> Tecnología que crece como la selva — generosa, sin desperdicios, regenerativa.
-                </p>
+                <h3 data-i18n="briefing.h3">O Desafio Estratégico</h3>
+                <p data-i18n-html="briefing.p">Criar um portfólio vivo que demonstre a capacidade de automação e IA do Hub. <strong>Lídi Moura</strong>, Dev e Arquiteta Manauara nascida em Manaus (AM), lidera este projeto inspirado na natureza amazônica: <em>abundância sem desperdício</em>. A Amazô não é um chatbot genérico — é uma <strong>SDR digital</strong>.</p>
             </div>
             <div class="card-container">
                 <div class="card">
-                    <h4>🌊 Abundância</h4>
-                    <p>Soluções completas, generosas e escaláveis — nada é entregue incompleto.</p>
+                    <h4 data-i18n="bio.1.h4">🌊 Abundância</h4>
+                    <p data-i18n="bio.1.p">Soluções completas, generosas e escaláveis — nada é entregue incompleto.</p>
                 </div>
                 <div class="card">
-                    <h4>♻️ Zero Desperdício</h4>
-                    <p>Cada hora de trabalho vira produto, documentação e legado para o cliente.</p>
+                    <h4 data-i18n="bio.2.h4">♻️ Zero Desperdício</h4>
+                    <p data-i18n="bio.2.p">Cada hora de trabalho vira produto, documentação e legado para o cliente.</p>
                 </div>
                 <div class="card">
-                    <h4>🌱 Regeneração</h4>
-                    <p>Tecnologia que cresce junto com quem usa — o cliente evolui com a ferramenta.</p>
+                    <h4 data-i18n="bio.3.h4">🌱 Regeneração</h4>
+                    <p data-i18n="bio.3.p">Tecnologia que cresce junto com quem usa — o cliente evolui com a ferramenta.</p>
                 </div>
                 <div class="card">
-                    <h4>🧠 Heutagogia</h4>
-                    <p>Aprendizado autodirigido. A própria Lídi é o produto mais fiel da metodologia.</p>
+                    <h4 data-i18n="bio.4.h4">🧠 Heutagogia</h4>
+                    <p data-i18n="bio.4.p">Aprendizado autodirigido. A própria Lídi é o produto mais fiel da metodologia.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ===================== ECOSSISTEMA HUB ===================== -->
+        <!-- ECOSSISTEMA HUB -->
         <section id="ecossistema" class="content-section fade-in" aria-labelledby="eco-title">
-            <h2 id="eco-title">🔗 Ecossistema Hub | Hub Ecosystem</h2>
-
+            <h2 id="eco-title" data-i18n="eco.h2">🔗 Ecossistema Hub</h2>
             <div class="card highlight-card">
-                <h3>Link d'Água — SaaS com QR Code Dinâmico e Permanente</h3>
-                <p>
-                    O <strong>Link d'Água</strong> é a solução SaaS do Hub que oferece <strong>QR Code Dinâmico e Permanente</strong>:
-                    o código é impresso uma vez e vale para sempre — o destino pode ser atualizado a qualquer momento.
-                    <em>Infinitas Possibilidades</em> em um único QR.
-                </p>
-                <p>
-                    <strong>EN:</strong> One QR Code, infinite destinations. Print once, update forever. |
-                    <strong>ES:</strong> Un código QR, infinitos destinos. Imprime una vez, actualiza siempre.
-                </p>
-                <a id="btn-link-dagua" href="https://link.encontrodagua.com/vitrine" target="_blank" rel="noopener noreferrer" class="cta-button secondary" aria-label="Acessar Link d'Água">
-                    🔗 Acessar Link d'Água
-                </a>
+                <h3 data-i18n="eco.ld.h3">Link d'Água — SaaS com QR Code Dinâmico e Permanente</h3>
+                <p data-i18n-html="eco.ld.p">O <strong>Link d'Água</strong> oferece <strong>QR Code Dinâmico e Permanente</strong>: o código é impresso uma vez e vale para sempre — o destino pode ser atualizado a qualquer momento. <em>Infinitas Possibilidades</em> em um único QR.</p>
+                <a id="btn-link-dagua" href="https://link.encontrodagua.com/vitrine" target="_blank" rel="noopener noreferrer" class="cta-button secondary" data-i18n="eco.ld.btn">🔗 Acessar Link d'Água</a>
             </div>
-
             <div class="card highlight-card">
-                <h3>CRM IA-First — Gestão Inteligente de Leads</h3>
-                <p>
-                    A Amazô é a <strong>fronteira de entrada</strong> do CRM IA-First do Hub. Tudo que ela captura
-                    alimenta o pipeline automaticamente — Kanban em tempo real, follow-up automático via WhatsApp
-                    e dados persistidos no Supabase.
-                </p>
-                <p>
-                    Acesse o ambiente de QA e validação do Showcase:
-                </p>
-                <a id="btn-crm-qa" href="https://prova.encontrodagua.com/showcase" target="_blank" rel="noopener noreferrer" class="cta-button secondary" aria-label="Acessar CRM IA-First para QA">
-                    🔬 Ambiente CRM (QA/Validação)
-                </a>
+                <h3 data-i18n="eco.crm.h3">CRM IA-First — Gestão Inteligente de Leads</h3>
+                <p data-i18n-html="eco.crm.p1">A Amazô é a <strong>fronteira de entrada</strong> do CRM IA-First do Hub. Tudo que ela captura alimenta o pipeline automaticamente.</p>
+                <p data-i18n="eco.crm.p2">Acesse o ambiente de QA e validação do Showcase:</p>
+                <a id="btn-crm-qa" href="https://prova.encontrodagua.com/showcase" target="_blank" rel="noopener noreferrer" class="cta-button secondary" data-i18n="eco.crm.btn">🔬 Ambiente CRM (QA/Validação)</a>
             </div>
-
             <div class="card-container">
-                <div class="card">
-                    <h4>📲 QR Code Dinâmico</h4>
-                    <p>O QR nunca muda. O destino sim. Atualizável a qualquer momento sem reimprimir.</p>
-                </div>
-                <div class="card">
-                    <h4>♾️ Permanente & Escalável</h4>
-                    <p>Impresso uma vez, válido para sempre. Infinitas possibilidades de uso.</p>
-                </div>
-                <div class="card">
-                    <h4>🤖 CRM IA-First</h4>
-                    <p>Qualificação automática, Kanban, follow-up e analytics — tudo integrado.</p>
-                </div>
-                <div class="card">
-                    <h4>💬 WhatsApp Integrado</h4>
-                    <p>CTA direto para conversão — da captura ao fechamento sem fricção.</p>
-                </div>
+                <div class="card"><h4 data-i18n="eco.c1.h4">📲 QR Code Dinâmico</h4><p data-i18n="eco.c1.p">O QR nunca muda. O destino sim. Atualizável a qualquer momento sem reimprimir.</p></div>
+                <div class="card"><h4 data-i18n="eco.c2.h4">♾️ Permanente & Escalável</h4><p data-i18n="eco.c2.p">Impresso uma vez, válido para sempre. Infinitas possibilidades de uso.</p></div>
+                <div class="card"><h4 data-i18n="eco.c3.h4">🤖 CRM IA-First</h4><p data-i18n="eco.c3.p">Qualificação automática, Kanban, follow-up e analytics — tudo integrado.</p></div>
+                <div class="card"><h4 data-i18n="eco.c4.h4">💬 WhatsApp Integrado</h4><p data-i18n="eco.c4.p">CTA direto para conversão — da captura ao fechamento sem fricção.</p></div>
             </div>
         </section>
 
-        <!-- ===================== FEATURES ===================== -->
+        <!-- FEATURES -->
         <section id="features" class="content-section fade-in" aria-labelledby="features-title">
-            <h2 id="features-title">✨ Recursos da Amazô | Amazô Features</h2>
+            <h2 id="features-title" data-i18n="feat.h2">✨ Recursos da Amazô</h2>
             <div class="card-container">
-                <div class="card" id="feat-integracao">
-                    <h4>🤝 Integração Humano-IA</h4>
-                    <p>Transição suave da IA para o WhatsApp humano — sem atritos, sem frustração.</p>
-                </div>
-                <div class="card" id="feat-contextual">
-                    <h4>🧩 Compreensão Contextual</h4>
-                    <p>Agente adaptativo — entende o contexto real, não segue roteiro engessado.</p>
-                </div>
-                <div class="card" id="feat-concierge">
-                    <h4>🎩 Modo Concierge</h4>
-                    <p>Identidade, regras de negócio e tom de voz configurados 100% para a sua marca.</p>
-                </div>
-                <div class="card" id="feat-sac">
-                    <h4>🕐 Recepção & SAC 24/7</h4>
-                    <p>Disponível a qualquer hora, em qualquer dispositivo, em qualquer idioma.</p>
-                </div>
-                <div class="card" id="feat-sdr">
-                    <h4>📈 SDR Digital</h4>
-                    <p>Qualifica o lead antes da passagem para o fechamento humano — ROI maximizado.</p>
-                </div>
-                <div class="card" id="feat-design">
-                    <h4>🎨 Design Tech Amazônico</h4>
-                    <p>Dark mode com paleta Rio Negro, Açaí Neon e Dourado Solimões — identidade única.</p>
-                </div>
+                <div class="card" id="feat-integracao"><h4 data-i18n="feat.1.h4">🤝 Integração Humano-IA</h4><p data-i18n="feat.1.p">Transição suave da IA para o WhatsApp humano — sem atritos, sem frustração.</p></div>
+                <div class="card" id="feat-contextual"><h4 data-i18n="feat.2.h4">🧩 Compreensão Contextual</h4><p data-i18n="feat.2.p">Agente adaptativo — entende o contexto real, não segue roteiro engessado.</p></div>
+                <div class="card" id="feat-concierge"><h4 data-i18n="feat.3.h4">🎩 Modo Concierge</h4><p data-i18n="feat.3.p">Identidade, regras de negócio e tom de voz configurados 100% para a sua marca.</p></div>
+                <div class="card" id="feat-sac"><h4 data-i18n="feat.4.h4">🕐 Recepção & SAC 24/7</h4><p data-i18n="feat.4.p">Disponível a qualquer hora, em qualquer dispositivo, em qualquer idioma.</p></div>
+                <div class="card" id="feat-sdr"><h4 data-i18n="feat.5.h4">📈 SDR Digital</h4><p data-i18n="feat.5.p">Qualifica o lead antes da passagem para o fechamento humano — ROI maximizado.</p></div>
+                <div class="card" id="feat-design"><h4 data-i18n="feat.6.h4">🎨 Design Tech Amazônico</h4><p data-i18n="feat.6.p">Dark mode com paleta Rio Negro, Açaí Neon e Dourado Solimões — identidade única.</p></div>
             </div>
         </section>
 
-        <!-- ===================== PROVA D'ÁGUA — METODOLOGIA ===================== -->
+        <!-- PROVA D'ÁGUA -->
         <section id="prova-dagua" class="content-section fade-in" aria-labelledby="metodologia-title" style="counter-reset: step-counter;">
-            <h2 id="metodologia-title">⏱️ Metodologia Prova d'Água | 5-Day Methodology</h2>
+            <h2 id="metodologia-title" data-i18n="prova.h2">⏱️ Metodologia Prova d'Água</h2>
             <div class="card highlight-card">
-                <h3>Do Diagnóstico ao Showcase em 5 Dias</h3>
-                <p>
-                    A <strong>Prova d'Água</strong> é a metodologia proprietária do Hub que comprova, na prática,
-                    a viabilidade da solução antes de qualquer compromisso de longo prazo. Em <strong>5 dias</strong>,
-                    o cliente tem uma demo funcional entregue via Showcase Web para QA/Validação.
-                </p>
-                <p>
-                    <strong>EN:</strong> In 5 days, a functional demo is delivered via Web Showcase for QA/Validation. |
-                    <strong>ES:</strong> En 5 días, una demo funcional entregada vía Showcase Web para QA/Validación.
-                </p>
+                <h3 data-i18n="prova.intro.h3">Do Diagnóstico ao Showcase em 5 Dias</h3>
+                <p data-i18n-html="prova.intro.p">A <strong>Prova d'Água</strong> é a metodologia proprietária do Hub: em <strong>5 dias</strong>, o cliente tem uma demo funcional entregue via Showcase Web para QA/Validação.</p>
             </div>
             <div class="card-container">
-                <div class="card onboarding-card" id="step-1">
-                    <h4>Dia 1 — Diagnóstico & Briefing</h4>
-                    <p>Entendemos sua dor, o tempo que você perde e mapeamos a personalidade da sua IA. Dor → Oportunidade.</p>
-                </div>
-                <div class="card onboarding-card" id="step-2">
-                    <h4>Dia 2 — Implementação</h4>
-                    <p>Construímos a arquitetura de ponta a ponta no formato <strong>Modo Concierge</strong> (Feito para Você).</p>
-                </div>
+                <div class="card onboarding-card" id="step-1"><h4 data-i18n="prova.1.h4">Dia 1 — Diagnóstico & Briefing</h4><p data-i18n="prova.1.p">Entendemos sua dor, o tempo que você perde e mapeamos a personalidade da sua IA. Dor → Oportunidade.</p></div>
+                <div class="card onboarding-card" id="step-2"><h4 data-i18n="prova.2.h4">Dia 2 — Implementação</h4><p data-i18n-html="prova.2.p">Construímos a arquitetura de ponta a ponta no formato <strong>Modo Concierge</strong> (Feito para Você).</p></div>
                 <div class="card onboarding-card" id="step-3">
-                    <h4>Dia 3 — Prova d'Água (QA Interno)</h4>
-                    <p>Você testa e valida o fluxo da IA diretamente no seu celular. Nada vai ao ar sem aprovação.</p>
-                    <img src="./assets/mazo.jpeg" alt="Amazô Closeup — demonstração visual da IA em ação" class="onboarding-image" loading="lazy">
+                    <h4 data-i18n="prova.3.h4">Dia 3 — Prova d'Água (QA Interno)</h4>
+                    <p data-i18n="prova.3.p">Você testa e valida o fluxo da IA diretamente no seu celular. Nada vai ao ar sem aprovação.</p>
+                    <img src="./assets/mazo.jpeg" alt="Amazô Closeup" class="onboarding-image" loading="lazy">
                 </div>
-                <div class="card onboarding-card" id="step-4">
-                    <h4>Dia 4 — Showcase Web (Entrega)</h4>
-                    <p>Demo funcional entregue ao cliente/PO via <strong>Showcase Web</strong> — canal público de QA e validação.</p>
-                </div>
-                <div class="card onboarding-card" id="step-5">
-                    <h4>Dia 5 — Deploy & ROI</h4>
-                    <p>Entrega oficial da sua Concierge Digital e início do acompanhamento de ROI (Retorno sobre Investimento).</p>
-                </div>
-                <div class="card onboarding-card heutagogia-card">
-                    <h4>🧠 Heutagogia em Ação</h4>
-                    <p>O cliente não apenas recebe o produto — ele <em>entende</em> o que foi construído, por quê funciona e como evoluir. Aprendizado autodirigido integrado à entrega.</p>
-                </div>
+                <div class="card onboarding-card" id="step-4"><h4 data-i18n="prova.4.h4">Dia 4 — Showcase Web (Entrega)</h4><p data-i18n-html="prova.4.p">Demo funcional entregue ao cliente/PO via <strong>Showcase Web</strong> — canal público de QA e validação.</p></div>
+                <div class="card onboarding-card" id="step-5"><h4 data-i18n="prova.5.h4">Dia 5 — Deploy & ROI</h4><p data-i18n="prova.5.p">Entrega oficial da sua Concierge Digital e início do acompanhamento de ROI.</p></div>
+                <div class="card onboarding-card heutagogia-card"><h4 data-i18n="prova.h.h4">🧠 Heutagogia em Ação</h4><p data-i18n-html="prova.h.p">O cliente não apenas recebe o produto — ele <em>entende</em> o que foi construído, por quê funciona e como evoluir.</p></div>
             </div>
         </section>
 
-        <!-- ===================== QA ===================== -->
+        <!-- QA -->
         <section id="qa" class="content-section fade-in" aria-labelledby="qa-title">
-            <h2 id="qa-title">✅ Análise de Qualidade (QA) | Quality Analysis</h2>
+            <h2 id="qa-title" data-i18n="qa.h2">✅ Análise de Qualidade (QA)</h2>
             <div class="card highlight-card">
-                <h3>✅ Resultado Geral: APROVADO — Prova d'Água Concluída</h3>
-                <p>Os testes de homologação demonstram que a Amazô cumpre seu papel de SDR, capturando dados e conduzindo a venda com precisão. O Showcase entregue é a evidência pública e rastreável da qualidade.</p>
+                <h3 data-i18n="qa.main.h3">✅ Resultado Geral: APROVADO — Prova d'Água Concluída</h3>
+                <p data-i18n="qa.main.p">Os testes de homologação demonstram que a Amazô cumpre seu papel de SDR, capturando dados e conduzindo a venda com precisão.</p>
             </div>
             <div class="card-container">
                 <div class="card qa-card" id="qa-aprovados">
-                    <h4>✅ Aprovado</h4>
+                    <h4 data-i18n="qa.ok.h4">✅ Aprovado</h4>
                     <ul>
-                        <li>Identidade visual "Tech Amazônico" (Dark Mode + Glassmorphism)</li>
-                        <li>Fluxo de conversão — captura de nome e interesse funcional</li>
-                        <li>Redirecionamento para WhatsApp da CEO/SuperAdmin operacional</li>
-                        <li>Responsividade: desktop, tablet e mobile</li>
-                        <li>Performance: Intersection Observer e lazy loading ativos</li>
-                        <li>Acessibilidade: ARIA labels e navegação por teclado</li>
-                        <li>Internacionalização: PT/EN/ES presente no Showcase</li>
+                        <li data-i18n="qa.li1">Identidade visual "Tech Amazônico" (Dark Mode + Glassmorphism)</li>
+                        <li data-i18n="qa.li2">Fluxo de conversão — captura de nome e interesse funcional</li>
+                        <li data-i18n="qa.li3">Redirecionamento para WhatsApp da CEO/SuperAdmin operacional</li>
+                        <li data-i18n="qa.li4">Responsividade: desktop, tablet e mobile</li>
+                        <li data-i18n="qa.li5">Performance: Intersection Observer e lazy loading ativos</li>
+                        <li data-i18n="qa.li6">Acessibilidade: ARIA labels e navegação por teclado</li>
+                        <li data-i18n="qa.li7">Internacionalização: PT/EN/ES com Language Switcher dinâmico</li>
                     </ul>
                 </div>
                 <div class="card qa-card-reprovado" id="qa-monitoramento">
-                    <h4>🔄 Em Monitoramento</h4>
-                    <p>Chaveamento dinâmico de idioma (JS) planejado para próxima sprint. Base de conhecimento Supabase em expansão contínua.</p>
+                    <h4 data-i18n="qa.mon.h4">🔄 Em Monitoramento</h4>
+                    <p data-i18n="qa.mon.p">Base de conhecimento Supabase em expansão contínua. Dashboard analytics em roadmap.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ===================== ÉTICA & NEGÓCIO ===================== -->
+        <!-- ÉTICA & NEGÓCIO -->
         <section id="etica" class="content-section fade-in" aria-labelledby="etica-title">
-            <h2 id="etica-title">⚖️ Ética & Negócio | Ethics & Business</h2>
+            <h2 id="etica-title" data-i18n="etica.h2">⚖️ Ética & Negócio</h2>
             <div class="card-container">
-                <div class="card etica-card" id="card-troca-justa">
-                    <h4>🤝 Sinal dos 50% — Troca Justa</h4>
-                    <p>O Hub opera sob o princípio da <strong>Troca Justa</strong>: o cliente recebe valor proporcional ao investimento. Sem exploração de nenhuma das partes. Negócio justo é negócio sustentável.</p>
-                </div>
-                <div class="card etica-card" id="card-desconto-social">
-                    <h4>💚 Desconto Social — Até 60%</h4>
-                    <p>Para ONGs, projetos sociais e empreendedores periféricos, o Hub aplica <strong>desconto social de até 60%</strong>. Tecnologia que liberta não pode ser barrada por preço.</p>
-                </div>
-                <div class="card etica-card" id="card-neutralidade">
-                    <h4>🕊️ Neutralidade Política & Ética</h4>
-                    <p>O Hub é <strong>politicamente neutro</strong> e eticamente comprometido. Não atende projetos que promovam discriminação ou desinformação. IA como aliada do humano — nunca como instrumento de controle.</p>
-                </div>
-                <div class="card etica-card" id="card-transparencia">
-                    <h4>🔍 Transparência Total</h4>
-                    <p>Código aberto no GitHub, metodologia documentada publicamente, preços e descontos declarados. Sem caixa-preta, sem promessas vazias.</p>
-                </div>
+                <div class="card etica-card" id="card-troca-justa"><h4 data-i18n="etica.1.h4">🤝 Sinal dos 50% — Troca Justa</h4><p data-i18n-html="etica.1.p">O Hub opera sob o princípio da <strong>Troca Justa</strong>: o cliente recebe valor proporcional ao investimento.</p></div>
+                <div class="card etica-card" id="card-desconto-social"><h4 data-i18n="etica.2.h4">💚 Desconto Social — Até 60%</h4><p data-i18n-html="etica.2.p">Para ONGs e empreendedores periféricos, o Hub aplica <strong>desconto social de até 60%</strong>.</p></div>
+                <div class="card etica-card" id="card-neutralidade"><h4 data-i18n="etica.3.h4">🕊️ Neutralidade Política & Ética</h4><p data-i18n-html="etica.3.p">O Hub é <strong>politicamente neutro</strong> e eticamente comprometido. IA como aliada do humano.</p></div>
+                <div class="card etica-card" id="card-transparencia"><h4 data-i18n="etica.4.h4">🔍 Transparência Total</h4><p data-i18n-html="etica.4.p">Código aberto no GitHub, metodologia documentada publicamente. Sem caixa-preta.</p></div>
             </div>
         </section>
     </main>
 
-    <!-- ===================== FOOTER ===================== -->
+    <!-- FOOTER -->
     <footer role="contentinfo">
         <div class="footer-main">
             <p class="footer-brand">🌿 <strong>Encontro d'Água Hub</strong></p>
-            <p>Showcase: Agente Amazô | V33 — Metodologia Prova d'Água</p>
+            <p>Showcase: Agente Amazô | Certified Solution</p>
         </div>
-
         <div class="footer-links">
             <a id="footer-showcase" href="https://lidimoura.github.io/amazo.ia-showcase/" target="_blank" rel="noopener noreferrer">🌿 Showcase</a>
             <a id="footer-vitrine" href="https://link.encontrodagua.com/vitrine" target="_blank" rel="noopener noreferrer">🔗 Vitrine</a>
@@ -310,22 +204,14 @@
             <a id="footer-linkedin" href="https://www.linkedin.com/in/lidimoura/" target="_blank" rel="noopener noreferrer">👩‍💻 LinkedIn</a>
             <a id="footer-github" href="https://github.com/lidimoura" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
         </div>
-
         <div class="footer-note">
-            <p>
-                <strong>Nota de Transparência & Heutagogia:</strong> Este projeto foi idealizado, arquitetado e validado por mim,
+            <p data-i18n-html="footer.note">
+                <strong>Nota de Transparência &amp; Heutagogia:</strong> Este projeto foi idealizado, arquitetado e validado por
                 <a href="https://www.linkedin.com/in/lidimoura/" target="_blank" rel="noopener noreferrer"><strong>Lídi Moura</strong></a>,
-                Dev & Arquiteta Manauara. A IA foi utilizada como suporte de <em>pair programming</em> para acelerar o código,
-                enquanto a gestão técnica, as integrações e o direcionamento estratégico permanecem sob meu aprendizado contínuo
-                (<strong>Heutagogia</strong>) em Data Science e Automação.
-            </p>
-            <p>
-                <strong>EN:</strong> AI was used as a pair programming assistant. Strategy, architecture, and business rules remain under Lídi Moura's direction. |
-                <strong>ES:</strong> La IA se usó como asistente de pair programming. Estrategia, arquitectura y reglas de negocio son de Lídi Moura.
+                Dev &amp; Arquiteta Manauara. A IA foi utilizada como suporte de <em>pair programming</em>.
             </p>
         </div>
-
-        <p class="footer-copy">Todos os direitos reservados © 2026 | Desenvolvido com ❤️ e biomimética</p>
+        <p class="footer-copy" data-i18n="footer.copy">Todos os direitos reservados © 2026 | Desenvolvido com ❤️ e biomimética</p>
     </footer>
 
     <script src="./script.js"></script>

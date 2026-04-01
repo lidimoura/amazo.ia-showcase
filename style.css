@@ -658,3 +658,54 @@ footer {
   h1 { font-size: 1.6rem; }
   .profile-img { width: 170px; height: 200px; }
 }
+
+/* ============================================================
+   LANGUAGE SWITCHER
+   ============================================================ */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: rgba(200, 120, 255, 0.06);
+  border: 1px solid rgba(200, 120, 255, 0.15);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+  margin-left: 1rem;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--duration) var(--ease);
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  color: var(--text-primary);
+  background: rgba(200, 120, 255, 0.12);
+}
+
+.lang-btn.active {
+  background: var(--gradient-acai);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(200, 120, 255, 0.3);
+}
+
+/* Transição suave ao trocar idioma */
+.lang-transitioning * {
+  transition: opacity 0.18s ease !important;
+  opacity: 0.3 !important;
+}
+
+@media (max-width: 680px) {
+  .lang-switcher { margin-left: 0; margin-top: 0.5rem; }
+  .main-header { flex-wrap: wrap; gap: 0.5rem; padding: 0.75rem 4%; }
+}
