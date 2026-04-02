@@ -1,125 +1,302 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Amazô - Portfólio e Guia</title>
+    <title>Amazô.ia — Concierge Digital | Encontro d'Água Hub</title>
+    <meta name="description" content="Conheça a Amazô, a Concierge Digital do Encontro d'Água Hub. SDR com IA que qualifica leads, apresenta serviços e converte visitantes em clientes reais.">
+    <meta property="og:title" content="Amazô.ia — Concierge Digital Inteligente">
+    <meta property="og:description" content="Portfólio vivo de IA conversacional: qualificação de leads, SDR 24/7 e conversão real.">
+    <meta property="og:image" content="./assets/amazo.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="logo">Encontro d'água hub</div>
-        <nav>
-            <a href="#hero">Início</a>
-            <a href="#presentation">Briefing</a>
-            <a href="#features">Recursos</a>
-            <a href="#qa">Análise de QA</a>
-            <a href="#onboarding">Metodologia</a>
+    <!-- ===== HEADER ===== -->
+    <header class="main-header" id="top">
+        <div class="logo">
+            <span class="logo-icon">🌊</span>
+            <span>Encontro d'Água Hub</span>
+        </div>
+        <nav id="main-nav">
+            <a href="#hero" data-i18n="nav.inicio">Início</a>
+            <a href="#benefits" data-i18n="nav.beneficios">Benefícios</a>
+            <a href="#presentation" data-i18n="nav.briefing">Briefing</a>
+            <a href="#qa" data-i18n="nav.qa">QA</a>
+            <a href="#onboarding" data-i18n="nav.metodologia">Metodologia</a>
         </nav>
+        <div class="header-actions">
+            <div class="lang-switcher" id="langSwitcher">
+                <button class="lang-btn active" data-lang="pt" title="Português">🇧🇷 PT</button>
+                <button class="lang-btn" data-lang="en" title="English">🇺🇸 EN</button>
+                <button class="lang-btn" data-lang="es" title="Español">🇪🇸 ES</button>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
 
     <main>
+
+        <!-- ===== HERO ===== -->
         <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>Showcase: Agente Amazô</h1>
-                <p>O portfólio vivo do Encontro d'água hub. Conheça a nossa concierge digital que atua como SDR e descubra como podemos criar uma inteligência artificial exclusiva para otimizar o tempo do seu negócio.</p>
+            <div class="hero-content fade-in">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    <span data-i18n="hero.badge">CS Ativo — Disponível Agora</span>
+                </div>
+                <h1 data-i18n="hero.title">Conheça a Amazô</h1>
+                <p class="hero-lead" data-i18n="hero.subtitle">A Concierge Digital que qualifica leads, apresenta o Encontro d'Água e converte visitantes em clientes reais — com linguagem humana e acessível, 24 horas por dia.</p>
                 <div class="hero-buttons">
-                    <button class="cta-button primary" onclick="window.Typebot?.toggle()">Falar com a Amazô</button>
-                    <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary">Catálogo de Serviços</a>
+                    <button class="cta-button primary" id="btnChat" data-i18n="hero.cta.primary">💬 Conversar com a Amazô</button>
+                    <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary" data-i18n="hero.cta.secondary">📋 Catálogo de Serviços</a>
                 </div>
+                <p class="hero-note" data-i18n="hero.note">Portfólio vivo — este é um agente de IA real em produção.</p>
             </div>
-            <div class="hero-image">
-                <img src="./assets/amazo.jpeg" alt="Agente Amazô - imagem de uma mulher digital com cabelos longos e trajes simples e de materiais naturais" class="profile-img fade-in">
+            <div class="hero-image-wrapper fade-in">
+                <div class="hero-image-frame">
+                    <img src="./assets/amazo.jpeg" alt="Agente Amazô — Concierge Digital do Encontro d'Água Hub" class="amazo-portrait" loading="eager">
+                    <div class="hero-image-overlay">
+                        <div class="amazo-info-card">
+                            <strong>Amazô</strong>
+                            <span data-i18n="hero.card.role">SDR & Concierge Digital</span>
+                            <div class="amazo-status"><span class="status-dot pulse"></span><span data-i18n="hero.card.status">Online</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- ===== CARROSSEL DE BENEFÍCIOS ===== -->
+        <section id="benefits" class="benefits-section fade-in">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="benefits.tag">Diferenciais</span>
+                <h2 data-i18n="benefits.title">Por que a Amazô?</h2>
+                <p class="section-desc" data-i18n="benefits.desc">Mais do que um chatbot — uma estratégia de conversão inteligente.</p>
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-prev" id="prevBtn" aria-label="Anterior">&#8249;</button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="carouselTrack">
+
+                        <div class="carousel-slide">
+                            <div class="benefit-card glass-no-border">
+                                <div class="benefit-icon">🤖</div>
+                                <h3 class="benefit-title" data-i18n="benefit.1.title">IA com Alma</h3>
+                                <p class="benefit-desc" data-i18n="benefit.1.desc">Linguagem humanizada, contextual e adaptada à identidade da sua marca — sem respostas robóticas.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="benefit-card glass-no-border">
+                                <div class="benefit-icon">⚡</div>
+                                <h3 class="benefit-title" data-i18n="benefit.2.title">SDR 24/7</h3>
+                                <p class="benefit-desc" data-i18n="benefit.2.desc">Qualifica leads, responde dúvidas e inicia o funil de vendas enquanto você descansa.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="benefit-card glass-no-border">
+                                <div class="benefit-icon">🎯</div>
+                                <h3 class="benefit-title" data-i18n="benefit.3.title">Conversão Real</h3>
+                                <p class="benefit-desc" data-i18n="benefit.3.desc">Leads capturados automaticamente e organizados no CRM, prontos para o time de vendas fechar.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="benefit-card glass-no-border">
+                                <div class="benefit-icon">🌿</div>
+                                <h3 class="benefit-title" data-i18n="benefit.4.title">Identidade Exclusiva</h3>
+                                <p class="benefit-desc" data-i18n="benefit.4.desc">Modo Concierge: personagem, tom de voz e regras de negócio 100% configurados para você.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="benefit-card glass-no-border">
+                                <div class="benefit-icon">🔗</div>
+                                <h3 class="benefit-title" data-i18n="benefit.5.title">Integração Total</h3>
+                                <p class="benefit-desc" data-i18n="benefit.5.desc">Conecta WhatsApp, CRM, Typebot e Supabase em um ecossistema de automação coeso.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="benefit-card glass-no-border">
+                                <div class="benefit-icon">📊</div>
+                                <h3 class="benefit-title" data-i18n="benefit.6.title">ROI Mensurável</h3>
+                                <p class="benefit-desc" data-i18n="benefit.6.desc">Dashboard de performance com métricas reais de conversão para provar o retorno do investimento.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-next" id="nextBtn" aria-label="Próximo">&#8250;</button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </section>
+
+        <!-- ===== BRIEFING DO PROJETO ===== -->
         <section id="presentation" class="content-section fade-in">
-             <h2>Apresentação e Briefing do Projeto</h2>
+            <div class="section-header">
+                <span class="section-tag" data-i18n="presentation.tag">Estratégia</span>
+                <h2 data-i18n="presentation.title">Briefing do Projeto</h2>
+            </div>
             <div class="card">
-                <h3>O Desafio Estratégico</h3>
-                <p>Criar um portfólio vivo que demonstre a capacidade de automação do Hub. A Amazô não é apenas um chatbot; é uma SDR (Sales Development Representative — representante de desenvolvimento de vendas) que qualifica leads, apresenta o Link d'Água e converte interessados em clientes reais, usando uma linguagem humana e acessível.</p>
+                <div class="card-icon">🎯</div>
+                <h3 data-i18n="presentation.challenge.title">O Desafio Estratégico</h3>
+                <p data-i18n="presentation.challenge.desc">Criar um portfólio vivo que demonstre a capacidade de automação do Hub. A Amazô não é apenas um chatbot — é uma SDR (Sales Development Representative) que qualifica leads, apresenta o Link d'Água e converte interessados em clientes reais, usando linguagem humana e acessível.</p>
             </div>
-        </section>
-
-        <section id="features" class="content-section fade-in">
-            <h2>Recursos e Funcionalidades</h2>
-            <div class="card-container">
-                 <div class="card">
-                    <h4>Integração Humano-IA</h4>
-                    <p>Transição suave da conversa com o assistente virtual para a equipe humana no WhatsApp, sem atritos.</p>
-                </div>
-                <div class="card">
-                    <h4>Compreensão Contextual</h4>
-                    <p>Agentes que fogem de fluxos engessados, entendendo o contexto real e adaptando as respostas.</p>
-                </div>
-                <div class="card">
-                    <h4>Modo Concierge</h4>
-                    <p>A identidade, regras de negócio e tom de voz configurados 100% por nós para refletir sua marca.</p>
-                </div>
-                <div class="card">
-                    <h4>Recepção e SAC 24/7</h4>
-                    <p>A IA tira dúvidas frequentes, acolhe leads e informa horários ou links a qualquer momento.</p>
+            <div class="amazo-profile-section">
+                <img src="./assets/mazo.jpeg" alt="Amazô — Vista aproximada" class="amazo-inline-img" loading="lazy">
+                <div class="amazo-profile-text">
+                    <h3 data-i18n="presentation.amazo.title">Sobre a Amazô</h3>
+                    <p data-i18n="presentation.amazo.desc">Inspirada na força da floresta amazônica, a Amazô combina a acessibilidade da comunicação popular com a precisão da tecnologia de ponta. Ela é a ponte entre inovação e humanidade — representando o que acreditamos que a IA deve ser: um facilitador, não um substituto.</p>
+                    <blockquote class="amazo-quote" data-i18n="presentation.amazo.quote">"Tecnologia que abraça, não que intimida."</blockquote>
                 </div>
             </div>
         </section>
 
+        <!-- ===== RELATÓRIO DE QA (ACCORDION) ===== -->
         <section id="qa" class="content-section fade-in">
-            <h2>Análise de Qualidade (QA) - Transparência</h2>
-             <div class="card">
-                <h3>Garantia de Qualidade</h3>
-                <p>Os testes de homologação demonstram que a Amazô cumpre perfeitamente seu papel de SDR, capturando os dados e conduzindo a venda com precisão.</p>
+            <div class="section-header">
+                <span class="section-tag" data-i18n="qa.tag">Transparência</span>
+                <h2 data-i18n="qa.title">Relatório de QA</h2>
+                <p class="section-desc" data-i18n="qa.desc">Resultados reais dos testes de homologação antes do lançamento oficial.</p>
             </div>
-            <div class="card-container">
-                <div class="card qa-card">
-                    <h4>Aprovado</h4>
-                    <ul>
-                        <li>Identidade visual "Tech Amazônico" (Dark Mode) aplicada com sucesso.</li>
-                        <li>Fluxo de conversão (Coleta de nome/interesse) funcional.</li>
-                        <li>Redirecionamento para o WhatsApp da CEO/SuperAdmin operacional.</li>
+
+            <details class="accordion-item" open>
+                <summary class="accordion-header">
+                    <span class="accordion-icon">✅</span>
+                    <span data-i18n="qa.approved.title">Itens Aprovados no Teste</span>
+                    <span class="accordion-chevron">▾</span>
+                </summary>
+                <div class="accordion-body">
+                    <ul class="qa-list approved">
+                        <li data-i18n="qa.approved.1">Identidade visual "Tech Amazônico" (Dark Mode) aplicada com sucesso.</li>
+                        <li data-i18n="qa.approved.2">Fluxo de conversão (coleta de nome e interesse) 100% funcional.</li>
+                        <li data-i18n="qa.approved.3">Redirecionamento para WhatsApp da CEO/SuperAdmin operacional.</li>
+                        <li data-i18n="qa.approved.4">Bubble chatbot integrado com ícone personalizado da Amazô.</li>
+                        <li data-i18n="qa.approved.5">Sistema multilíngue (PT/EN/ES) implementado e validado.</li>
                     </ul>
                 </div>
-                <div class="card qa-card-reprovado">
-                    <h4>Em Monitoramento (Observação)</h4>
-                    <p>Monitorar a base de conhecimento para incluir detalhes do GuIA Amazônico assim que o banco de dados do Supabase for integrado.</p>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="accordion-icon">🔍</span>
+                    <span data-i18n="qa.monitoring.title">Em Monitoramento Contínuo</span>
+                    <span class="accordion-chevron">▾</span>
+                </summary>
+                <div class="accordion-body">
+                    <div class="qa-monitoring-card">
+                        <p data-i18n="qa.monitoring.desc">Monitorar a base de conhecimento para incluir detalhes do GuIA Amazônico assim que o banco de dados do Supabase for integrado à memória de longo prazo do agente.</p>
+                        <div class="monitoring-tag" data-i18n="qa.monitoring.tag">🕐 Próxima Sprint — V35</div>
+                    </div>
                 </div>
-            </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="accordion-icon">🧪</span>
+                    <span data-i18n="qa.tech.title">Detalhes Técnicos da Implementação</span>
+                    <span class="accordion-chevron">▾</span>
+                </summary>
+                <div class="accordion-body">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <span class="tech-label">Frontend</span>
+                            <span class="tech-value">HTML5 / CSS3 / Vanilla JS</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">IA Engine</span>
+                            <span class="tech-value">Typebot + GPT-4o</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">CRM</span>
+                            <span class="tech-value">Link d'Água (Supabase + React)</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Deploy</span>
+                            <span class="tech-value">GitHub Pages + Vercel</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">i18n</span>
+                            <span class="tech-value">PT-BR / EN / ES (vanilla)</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Integração</span>
+                            <span class="tech-value">WhatsApp Business API</span>
+                        </div>
+                    </div>
+                </div>
+            </details>
         </section>
 
+        <!-- ===== METODOLOGIA ===== -->
         <section id="onboarding" class="content-section fade-in">
-            <h2>Processo Heutagógico de 4 Etapas</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h4>1. Diagnóstico e Briefing</h4>
-                    <p>Entendemos sua dor, o tempo que você perde e mapeamos a personalidade da sua IA.</p>
+            <div class="section-header">
+                <span class="section-tag" data-i18n="onboarding.tag">Processo</span>
+                <h2 data-i18n="onboarding.title">Processo Heutagógico de 4 Etapas</h2>
+                <p class="section-desc" data-i18n="onboarding.desc">Da ideia ao lançamento, acompanhado em cada passo.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step card-plain">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h4 data-i18n="onboarding.step1.title">Diagnóstico e Briefing</h4>
+                        <p data-i18n="onboarding.step1.desc">Entendemos sua dor, mapeamos o tempo perdido e desenhamos a personalidade da sua IA — com você.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h4>2. Implementação</h4>
-                    <p>Construímos a arquitetura de ponta a ponta no formato Modo Concierge (Feito para Você).</p>
+                <div class="process-step card-plain">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h4 data-i18n="onboarding.step2.title">Implementação</h4>
+                        <p data-i18n="onboarding.step2.desc">Arquitetura ponta a ponta no formato Concierge: IA + CRM + integrações configurados para você.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h4>3. Provad'água (QA)</h4>
-                    <p>Você testa e valida o fluxo da IA diretamente no seu celular antes do lançamento oficial.</p>
-                    <img src="./assets/mazo.jpeg" alt="Amazô Closeup" class="onboarding-image">
+                <div class="process-step card-plain">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h4 data-i18n="onboarding.step3.title">Provad'água (QA)</h4>
+                        <p data-i18n="onboarding.step3.desc">Você testa e valida o fluxo da IA diretamente no seu celular — antes do lançamento oficial.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h4>4. Showcase e Entrega</h4>
-                    <p>Entrega oficial da sua Concierge Digital e acompanhamento do seu ROI (Retorno sobre Investimento).</p>
+                <div class="process-step card-plain">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h4 data-i18n="onboarding.step4.title">Showcase e Entrega</h4>
+                        <p data-i18n="onboarding.step4.desc">Entrega oficial da sua Concierge Digital + acompanhamento de ROI no primeiro mês.</p>
+                    </div>
                 </div>
+            </div>
+
+            <div class="cta-final">
+                <h3 data-i18n="cta.final.title">Pronto para ter sua própria Amazô?</h3>
+                <p data-i18n="cta.final.desc">Cada negócio merece uma IA com a sua cara. Vamos construir juntos.</p>
+                <button class="cta-button primary large" id="btnChatFinal" data-i18n="cta.final.btn">Iniciar meu Projeto →</button>
             </div>
         </section>
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <p>Projeto Amazô | Showcase desenvolvido pelo Encontro d'Água Hub</p>
-        <div class="footer-note">
-            <p><strong>Nota de Transparência:</strong> Este projeto foi idealizado, arquitetado e validado por mim, Lídi Moura. A IA foi utilizada como suporte de <em>pair programming</em> para acelerar o código, enquanto a gestão técnica e as integrações permanecem sob meu aprendizado contínuo (Heutagogia) em Data Science.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">🌊</span>
+                <strong>Encontro d'Água Hub</strong>
+            </div>
+            <p class="footer-tagline" data-i18n="footer.tagline">Tecnologia com propósito. IA com alma.</p>
+            <div class="footer-note">
+                <p><strong data-i18n="footer.transparency.label">Nota de Transparência:</strong> <span data-i18n="footer.transparency.text">Este projeto foi idealizado, arquitetado e validado por Lídi Moura. A IA foi utilizada como suporte de <em>pair programming</em> para acelerar o código, enquanto a gestão técnica e as integrações permanecem sob aprendizado contínuo (Heutagogia) em Data Science.</span></p>
+            </div>
+            <p class="footer-copy">© 2025 Encontro d'Água Hub · <a href="https://github.com/lidimoura/amazo.ia-showcase" target="_blank" rel="noopener">GitHub</a></p>
         </div>
     </footer>
 
+    <!-- Typebot Bubble Script -->
     <script src="./script.js"></script>
 </body>
 </html>
