@@ -1,4 +1,4 @@
-# 📝 DEVLOG — Showcase: Agente Amazô | V38
+﻿# 📝 DEVLOG — Showcase: Agente Amazô | V38
 
 **Arquiteta & Dev:** Lídi Moura — Arquiteta de Soluções & Dev, formada em Psicologia (UX/Estratégia)
 **Pair Programming:** Claude Sonnet 4.6 (Thinking)
@@ -286,9 +286,47 @@ amazo.ia-showcase/
 
 ---
 
+## 🚀 V42 — Strategic Conversion Flow, Pricing Transparency & UI Cleanup
+
+**Data:** 10 de Abril de 2026
+**Tipo:** Conversão Estratégica, Pricing, UI Cleanup
+
+### O que foi feito nesta versão:
+
+- ✅ **Oferta de Lançamento**: Chatbot Concierge Essencial **a partir de R$ 80** — recepção, SAC e FAQ para sites
+- ✅ **Nota de Transparência**: Funcionalidades avançadas (WhatsApp, Agendamento, Multicanal, CRM) negociadas à parte — sem letras miúdas
+- ✅ **Centralização no Hub**: CTAs principais agora apontam para `hub.encontrodagua.com` (planos e preços)
+- ✅ **WhatsApp Business**: Número correto `5592992557600` com mensagem de contexto para consultas estratégicas
+- ✅ **Pricing Section**: Nova seção com 2 cards (Essencial + Avançado) com estilos glassmorphism premium
+- ✅ **FAQ Pricing**: Primeira pergunta do FAQ agora aborda preços com link para o Hub
+- ✅ **Footer único**: Garantida a presença de apenas 1 footer profissional
+- ✅ **Autoridade atualizada**: Lídi Moura como Arquiteta de Soluções & Dev Fullstack Low-Code, formada em Psicologia (UX/Estratégia Comportamental)
+- ✅ **i18n completo**: Todas as novas chaves traduzidas para PT/EN/ES
+- ✅ **Logos reais**: Hub (gold) + Link d'\u00c1gua (product badge) via GitHub raw
+
+### Fluxo de Conversão V42:
+
+```
+Showcase (portfólio vivo)
+  ├─> Hero Botão: Amazô Bubble (Typebot) → qualifica lead
+  ├─> Hero Secund\u00e1rio: hub.encontrodagua.com → ver planos
+  ├─> CTA Final: hub.encontrodagua.com + WhatsApp estratégico
+  └─> WhatsApp: wa.me/5592992557600 + msg de contexto
+```
+
+### ⚠️ Pendentes para próxima sprint:
+
+| Item | Status |
+|------|--------|
+| **Google Analytics GA4** | 🔴 Pendente |
+| **Integração Stripe** | 🔴 Pendente |
+| **Trial 7 dias autom\u00e1tico** | 🟡 Em progresso |
+
+---
+
 ## ✅ Créditos
 
-**Arquiteta & Dev:** [Lídi Moura](https://www.linkedin.com/in/lidimoura/) — Arquiteta de Soluções & Dev, Psicologia (UX/Estratégia)
+**Arquiteta & Dev:** [Lídi Moura](https://www.linkedin.com/in/lidimoura/) — Arquiteta de Soluções & Dev Fullstack Low-Code, formada em Psicologia (UX/Estratégia Comportamental)
 **Pair Programming IA:** Claude Sonnet 4.6 (Thinking)
 **Hub:** [hub.encontrodagua.com](https://hub.encontrodagua.com)
 **Vitrine:** [link.encontrodagua.com/vitrine](https://link.encontrodagua.com/vitrine)
@@ -297,4 +335,4 @@ amazo.ia-showcase/
 
 **Última atualização:** 10 de Abril de 2026
 **Deploy:** [GitHub Pages](https://lidimoura.github.io/amazo.ia-showcase/)
-**Versão:** V38 — UI Cleanup & Hardware Migration Sync
+**Versão:** V42 — Strategic Conversion Flow, Pricing Transparency & UI Cleanup

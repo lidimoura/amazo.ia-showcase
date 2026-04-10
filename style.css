@@ -656,6 +656,122 @@ main { padding-top: var(--header-h); position: relative; z-index: 1; }
 }
 .step-content h4 { color: var(--areia-gold); margin-bottom: 0.4rem; }
 
+/* ── PRICING SECTION ── */
+.pricing-section { max-width: var(--max-width); margin: 0 auto; padding: 5rem 5%; }
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color var(--dur-med) var(--ease), transform var(--dur-med) var(--ease);
+}
+.pricing-card:hover {
+    border-color: rgba(200,120,255,0.3);
+    transform: translateY(-3px);
+}
+.pricing-card.pricing-featured {
+    border-color: rgba(200,120,255,0.45);
+    background: linear-gradient(135deg, rgba(200,120,255,0.06) 0%, var(--glass-bg) 70%);
+    box-shadow: 0 0 40px rgba(200,120,255,0.1);
+}
+.pricing-card.pricing-featured:hover { transform: translateY(-5px); }
+
+.pricing-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: linear-gradient(90deg, var(--acai-purple), #a855f7);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    width: fit-content;
+}
+.pricing-icon { font-size: 2.2rem; filter: drop-shadow(0 0 8px rgba(200,120,255,0.4)); }
+.pricing-name {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--areia-gold);
+    margin: 0;
+}
+.pricing-price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+}
+.pricing-from {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+.pricing-value {
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--acai-purple);
+    line-height: 1;
+}
+.pricing-period {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+.pricing-custom {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--areia-gold);
+}
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.pricing-features li {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.pricing-features li:last-child { border-bottom: none; }
+
+.pricing-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    background: rgba(240,184,100,0.05);
+    border: 1px solid rgba(240,184,100,0.2);
+    border-radius: var(--radius-sm);
+    max-width: 760px;
+    margin: 0 auto;
+}
+.pricing-note-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+.pricing-note p { color: var(--text-muted); font-size: 0.85rem; margin: 0; line-height: 1.6; }
+
 /* CTA Final */
 .cta-final {
     text-align: center;
@@ -668,10 +784,31 @@ main { padding-top: var(--header-h); position: relative; z-index: 1; }
 .cta-final::before {
     content: ''; position: absolute; inset: 0;
     background: radial-gradient(ellipse at center top, rgba(200,120,255,0.08) 0%, transparent 70%);
+
     pointer-events: none;
 }
 .cta-final h3 { font-size: 1.6rem; color: var(--text-primary); margin-bottom: 0.75rem; }
 .cta-final p { color: var(--text-secondary); max-width: 400px; margin: 0 auto 1.75rem; }
+.cta-final-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* FAQ inline CTA link */
+.faq-cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.5rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--acai-purple);
+    text-decoration: none;
+    transition: color var(--dur-fast) var(--ease);
+}
+.faq-cta-link:hover { color: var(--areia-gold); }
 
 /* ── FADE IN ── */
 .fade-in {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazô.ia — Concierge Digital | Encontro d'Água Hub</title>
+    <title>Amazô.ia — Concierge Digital IA | Encontro d'Água Hub</title>
     <meta name="description" content="Conheça a Amazô, a Concierge Digital do Encontro d'Água Hub. SDR com IA que qualifica leads, apresenta serviços e converte visitantes em clientes reais.">
     <meta property="og:title" content="Amazô.ia — Concierge Digital Inteligente">
     <meta property="og:description" content="Portfólio vivo de IA conversacional: qualificação de leads, SDR 24/7 e conversão real.">
@@ -25,9 +25,9 @@
         <nav id="main-nav">
             <a href="#hero" data-i18n="nav.inicio">Início</a>
             <a href="#benefits" data-i18n="nav.beneficios">Benefícios</a>
-            <a href="#presentation" data-i18n="nav.briefing">Briefing</a>
-            <a href="#qa" data-i18n="nav.qa">QA</a>
+            <a href="#pricing" data-i18n="nav.preco">Preços</a>
             <a href="#onboarding" data-i18n="nav.metodologia">Metodologia</a>
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
         </nav>
         <div class="header-actions">
             <div class="lang-switcher" id="langSwitcher">
@@ -54,7 +54,7 @@
                 <p class="hero-lead" data-i18n="hero.subtitle">A Concierge Digital que qualifica leads, apresenta o Encontro d'Água e converte visitantes em clientes reais — com linguagem humana e acessível, 24 horas por dia.</p>
                 <div class="hero-buttons">
                     <button class="cta-button primary" id="btnChat" data-i18n="hero.cta.primary">💬 Conversar com a Amazô</button>
-                    <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary" data-i18n="hero.cta.secondary">📋 Catálogo de Serviços</a>
+                    <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary" id="btnHub" data-i18n="hero.cta.secondary">🚀 Ver Planos e Preços</a>
                 </div>
                 <p class="hero-note" data-i18n="hero.note">Portfólio vivo — este é um agente de IA real em produção.</p>
             </div>
@@ -137,6 +137,59 @@
                 <button class="carousel-btn carousel-next" id="nextBtn" aria-label="Próximo">&#8250;</button>
             </div>
             <div class="carousel-dots" id="carouselDots"></div>
+        </section>
+
+        <!-- ===== OFERTA DE LANÇAMENTO ===== -->
+        <section id="pricing" class="content-section pricing-section fade-in">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="pricing.tag">Oferta de Lançamento</span>
+                <h2 data-i18n="pricing.title">A partir de R$ 80</h2>
+                <p class="section-desc" data-i18n="pricing.desc">Chatbots de recepção, SAC e FAQ para sites — sem mensalidades surpresa.</p>
+            </div>
+
+            <div class="pricing-grid">
+
+                <div class="pricing-card pricing-featured">
+                    <div class="pricing-badge">🚀 Lançamento</div>
+                    <div class="pricing-icon">🤖</div>
+                    <h3 class="pricing-name" data-i18n="pricing.basic.name">Concierge Essencial</h3>
+                    <div class="pricing-price">
+                        <span class="pricing-from" data-i18n="pricing.from">A partir de</span>
+                        <span class="pricing-value">R$ 80</span>
+                        <span class="pricing-period" data-i18n="pricing.period">/projeto</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.basic.f1">✅ Chatbot de recepção para site</li>
+                        <li data-i18n="pricing.basic.f2">✅ SAC automatizado 24/7</li>
+                        <li data-i18n="pricing.basic.f3">✅ FAQ interativo</li>
+                        <li data-i18n="pricing.basic.f4">✅ Identidade e tom de voz do seu negócio</li>
+                        <li data-i18n="pricing.basic.f5">✅ Entrega em 5 dias úteis</li>
+                    </ul>
+                    <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button primary" id="btnPricingHub" data-i18n="pricing.cta">Ver Planos Completos →</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-icon">⚡</div>
+                    <h3 class="pricing-name" data-i18n="pricing.advanced.name">Concierge Avançado</h3>
+                    <div class="pricing-price">
+                        <span class="pricing-from pricing-custom" data-i18n="pricing.custom">Sob consulta</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.advanced.f1">✅ Tudo do Essencial</li>
+                        <li data-i18n="pricing.advanced.f2">⚡ WhatsApp Business integrado</li>
+                        <li data-i18n="pricing.advanced.f3">⚡ Agendamento automatizado</li>
+                        <li data-i18n="pricing.advanced.f4">⚡ CRM com pipeline de leads</li>
+                        <li data-i18n="pricing.advanced.f5">⚡ Multicanal (site + WhatsApp)</li>
+                    </ul>
+                    <a href="https://wa.me/5592992557600?text=Ol%C3%A1%2C+Lidi%21+Vim+pelo+Showcase+da+Amaz%C3%B4+e+quero+uma+consulta+estrat%C3%A9gica+sobre+o+Concierge+Avan%C3%A7ado." target="_blank" rel="noopener noreferrer" class="cta-button secondary" id="btnPricingWA" data-i18n="pricing.cta.advanced">Consulta Estratégica →</a>
+                </div>
+
+            </div>
+
+            <div class="pricing-note">
+                <span class="pricing-note-icon">💡</span>
+                <p data-i18n="pricing.note">Funcionalidades avançadas (WhatsApp, Agendamento, Multicanal, Integração com CRM) são negociadas à parte, dependendo da demanda e complexidade de cada projeto. Transparência total — sem letras miúdas.</p>
+            </div>
         </section>
 
         <!-- ===== BRIEFING DO PROJETO ===== -->
@@ -282,34 +335,49 @@
             <div class="cta-final">
                 <h3 data-i18n="cta.final.title">Pronto para ter sua própria Amazô?</h3>
                 <p data-i18n="cta.final.desc">Cada negócio merece uma IA com a sua cara. Vamos construir juntos.</p>
-                <a href="https://wa.me/5592991482610?text=Ol%C3%A1%2C+Lidi%21+Vim+pelo+Showcase+da+Amaz%C3%B4+e+quero+saber+mais+sobre+minha+pr%C3%B3pria+IA+Concierge." target="_blank" rel="noopener noreferrer" class="cta-button primary large" id="btnChatFinal" data-i18n="cta.final.btn">Iniciar meu Projeto →</a>
+                <div class="cta-final-actions">
+                    <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="cta-button primary large" id="btnChatFinal" data-i18n="cta.final.btn">Ver Planos no Hub →</a>
+                    <a href="https://wa.me/5592992557600?text=Ol%C3%A1%2C+Lidi%21+Vim+pelo+Showcase+da+Amaz%C3%B4+e+quero+uma+consulta+estrat%C3%A9gica+sobre+minha+IA+Concierge." target="_blank" rel="noopener noreferrer" class="cta-button secondary" id="btnWhatsApp" data-i18n="cta.final.wa">💬 WhatsApp Estratégico</a>
+                </div>
             </div>
         </section>
-    </main>
 
         <!-- ===== FAQ ACCORDION ===== -->
         <section id="faq" class="content-section faq-section fade-in">
             <div class="section-header">
                 <span class="section-tag">FAQ</span>
-                <h2>Perguntas Frequentes</h2>
-                <p class="section-desc">Tudo que você precisa saber antes de começar.</p>
+                <h2 data-i18n="faq.title">Perguntas Frequentes</h2>
+                <p class="section-desc" data-i18n="faq.desc">Tudo que você precisa saber antes de começar.</p>
             </div>
 
             <div class="faq-accordion">
 
                 <details class="faq-item">
                     <summary class="faq-question">
-                        <span class="faq-q-icon">⏱</span>
-                        <span>Como funciona o Ciclo de 5 dias?</span>
+                        <span class="faq-q-icon">💰</span>
+                        <span data-i18n="faq.pricing.q">Quanto custa? Existe plano básico?</span>
                         <span class="faq-chevron">▾</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>Da conversa ao lançamento em <strong>5 dias úteis</strong>. O ciclo é dividido em:</p>
+                        <p data-i18n="faq.pricing.a1">Sim! O plano <strong>Concierge Essencial</strong> começa a partir de <strong>R$ 80</strong> — inclui chatbot de recepção, SAC automatizado e FAQ para sites.</p>
+                        <p data-i18n="faq.pricing.a2">Funcionalidades avançadas como WhatsApp Business, Agendamento, Multicanal e integração com CRM são negociadas à parte, com orçamento personalizado por complexidade e demanda. Sem letras miúdas.</p>
+                        <a href="https://hub.encontrodagua.com" target="_blank" rel="noopener noreferrer" class="faq-cta-link" data-i18n="faq.pricing.link">→ Ver todos os planos no Hub</a>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-q-icon">⏱</span>
+                        <span data-i18n="faq.cycle.q">Como funciona o Ciclo de 5 dias?</span>
+                        <span class="faq-chevron">▾</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.cycle.intro">Da conversa ao lançamento em <strong>5 dias úteis</strong>. O ciclo é dividido em:</p>
                         <ol class="faq-list">
-                            <li><strong>Dia 1 — Briefing:</strong> Entendemos sua dor e mapeamos a personalidade da IA.</li>
-                            <li><strong>Dia 2–3 — Build:</strong> Configuramos a Amazô com seu nicho, tom de voz e base de conhecimento.</li>
-                            <li><strong>Dia 4 — Provad'água (QA):</strong> Você testa o fluxo no celular antes de ir ao ar.</li>
-                            <li><strong>Dia 5 — Showcase:</strong> Entrega oficial + integração com seu CRM e WhatsApp.</li>
+                            <li><strong data-i18n="faq.cycle.d1.label">Dia 1 — Briefing:</strong> <span data-i18n="faq.cycle.d1.desc">Entendemos sua dor e mapeamos a personalidade da IA.</span></li>
+                            <li><strong data-i18n="faq.cycle.d2.label">Dia 2–3 — Build:</strong> <span data-i18n="faq.cycle.d2.desc">Configuramos a Amazô com seu nicho, tom de voz e base de conhecimento.</span></li>
+                            <li><strong data-i18n="faq.cycle.d4.label">Dia 4 — Provad'água (QA):</strong> <span data-i18n="faq.cycle.d4.desc">Você testa o fluxo no celular antes de ir ao ar.</span></li>
+                            <li><strong data-i18n="faq.cycle.d5.label">Dia 5 — Showcase:</strong> <span data-i18n="faq.cycle.d5.desc">Entrega oficial + integração com seu CRM e WhatsApp.</span></li>
                         </ol>
                     </div>
                 </details>
@@ -317,40 +385,41 @@
                 <details class="faq-item">
                     <summary class="faq-question">
                         <span class="faq-q-icon">🏥</span>
-                        <span>Quais nichos são atendidos?</span>
+                        <span data-i18n="faq.niches.q">Quais nichos são atendidos?</span>
                         <span class="faq-chevron">▾</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>A Amazô foi arquitetada para <strong>3 categorias estratégicas</strong>:</p>
+                        <p data-i18n="faq.niches.intro">A Amazô foi arquitetada para <strong>3 categorias estratégicas</strong>:</p>
                         <ul class="faq-list">
-                            <li><strong>Saúde:</strong> Médicos, Psicólogos, Terapeutas, Nutricionistas, Clínicas.</li>
-                            <li><strong>Negócios Locais:</strong> Comércios, Restaurantes, Salões, Serviços, Startups locais.</li>
-                            <li><strong>Autônomos:</strong> Advogados, Contadores, Coaches, Consultores, Arquitetos.</li>
+                            <li><strong data-i18n="faq.niches.health">Saúde:</strong> Médicos, Psicólogos, Terapeutas, Nutricionistas, Clínicas.</li>
+                            <li><strong data-i18n="faq.niches.business">Negócios Locais:</strong> Comércios, Restaurantes, Salões, Serviços, Startups locais.</li>
+                            <li><strong data-i18n="faq.niches.freelance">Autônomos:</strong> Advogados, Contadores, Coaches, Consultores, Arquitetos.</li>
                         </ul>
-                        <p>Cada nicho recebe um <strong>Modo Concierge personalizado</strong>: identidade, tom de voz e base de conhecimento 100% configurados.</p>
+                        <p data-i18n="faq.niches.custom">Cada nicho recebe um <strong>Modo Concierge personalizado</strong>: identidade, tom de voz e base de conhecimento 100% configurados.</p>
                     </div>
                 </details>
 
                 <details class="faq-item">
                     <summary class="faq-question">
                         <span class="faq-q-icon">🔒</span>
-                        <span>Como funciona a segurança Multi-tenant?</span>
+                        <span data-i18n="faq.security.q">Como funciona a segurança Multi-tenant?</span>
                         <span class="faq-chevron">▾</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>O sistema garante <strong>isolamento completo entre clientes</strong>:</p>
+                        <p data-i18n="faq.security.intro">O sistema garante <strong>isolamento completo entre clientes</strong>:</p>
                         <ul class="faq-list">
-                            <li><strong>Row Level Security (RLS):</strong> Supabase PostgreSQL — cada cliente vê apenas seus próprios dados.</li>
-                            <li><strong>Namespace isolado:</strong> Leads e conversas de cada tenant operam em ambiente 100% separado.</li>
-                            <li><strong>Autenticação JWT:</strong> Tokens de sessão por cliente via Supabase Auth.</li>
-                            <li><strong>Edge Functions:</strong> Validações server-side antes de qualquer acesso a dados.</li>
+                            <li><strong>Row Level Security (RLS):</strong> <span data-i18n="faq.security.rls">Supabase PostgreSQL — cada cliente vê apenas seus próprios dados.</span></li>
+                            <li><strong>Namespace isolado:</strong> <span data-i18n="faq.security.ns">Leads e conversas de cada tenant operam em ambiente 100% separado.</span></li>
+                            <li><strong>Autenticação JWT:</strong> <span data-i18n="faq.security.jwt">Tokens de sessão por cliente via Supabase Auth.</span></li>
+                            <li><strong>Edge Functions:</strong> <span data-i18n="faq.security.edge">Validações server-side antes de qualquer acesso a dados.</span></li>
                         </ul>
-                        <p><strong>Garantia:</strong> Nenhum dado de um cliente cruza para outro — nem via API, nem via interface.</p>
+                        <p data-i18n="faq.security.guarantee"><strong>Garantia:</strong> Nenhum dado de um cliente cruza para outro — nem via API, nem via interface.</p>
                     </div>
                 </details>
 
             </div>
         </section>
+    </main>
 
     <!-- ===== FOOTER ===== -->
     <footer>
@@ -375,7 +444,7 @@
                 <p>
                     <strong>Nota de Transparência &amp; Heutagogia:</strong> Este projeto foi idealizado, arquitetado e validado por
                     <a href="https://www.linkedin.com/in/lidimoura/" target="_blank" rel="noopener noreferrer"><strong>Lídi Moura</strong></a>,
-                    Arquiteta de Soluções &amp; Dev, formada em Psicologia (UX/Estratégia). A IA foi utilizada como suporte de <em>pair programming</em>.
+                    Arquiteta de Soluções &amp; Dev Fullstack Low-Code, formada em Psicologia (UX/Estratégia Comportamental). A IA foi utilizada como suporte de <em>pair programming</em>.
                 </p>
             </div>
 

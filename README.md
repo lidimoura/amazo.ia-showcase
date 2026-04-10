@@ -1,7 +1,7 @@
 # 🌿 Showcase: Agente Amazô | Encontro d'Água Hub
 
 ![Status](https://img.shields.io/badge/status-produção-brightgreen?style=for-the-badge)
-![Versão](https://img.shields.io/badge/versão-V38-blueviolet?style=for-the-badge)
+![Versão](https://img.shields.io/badge/versão-V42-blueviolet?style=for-the-badge)
 ![Deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-blue?style=for-the-badge)
 ![Idiomas](https://img.shields.io/badge/idiomas-PT%20%7C%20EN%20%7C%20ES-orange?style=for-the-badge)
 
@@ -33,12 +33,12 @@
 | Item | Descrição / Description |
 | --- | --- |
 | **Empresa / Company** | Encontro d'Água Hub |
-| **Projeto / Project** | Showcase: Agente Amazô — V38 |
-| **Arquiteta / Architect** | [Lídi Moura](https://www.linkedin.com/in/lidimoura/) — Dev Manauara |
+| **Projeto / Project** | Showcase: Agente Amazô — V42 |
+| **Arquiteta / Architect** | [Lídi Moura](https://www.linkedin.com/in/lidimoura/) — Arquiteta de Soluções & Dev Fullstack Low-Code, formada em Psicologia (UX/Estratégia) |
 | **Status** | ✅ Ativo em Produção / Active in Production |
 | **Showcase Web** | [lidimoura.github.io/amazo.ia-showcase](https://lidimoura.github.io/amazo.ia-showcase/) |
+| **Hub (Conversão)** | [hub.encontrodagua.com](https://hub.encontrodagua.com) |
 | **Vitrine / Store** | [link.encontrodagua.com/vitrine](https://link.encontrodagua.com/vitrine) |
-| **Hub Ecossistema** | [hub.encontrodagua.com](https://hub.encontrodagua.com) |
 | **CRM IA-First (QA)** | [prova.encontrodagua.com/showcase](https://prova.encontrodagua.com/showcase) |
 | **LinkedIn Lídi** | [linkedin.com/in/lidimoura](https://www.linkedin.com/in/lidimoura/) |
 | **GitHub** | [github.com/lidimoura](https://github.com/lidimoura) |
@@ -161,7 +161,31 @@ O Encontro d'Água Hub é **politicamente neutro** e eticamente comprometido:
 
 ---
 
-## 🔑 Links Estratégicos de Conversão
+## 💰 Modelo de Negócio — Oferta de Lançamento
+
+### Preços & Transparência
+
+| Plano | Preço Inicial | Inclui |
+|---|---|---|
+| **Concierge Essencial** | A partir de **R$ 80** | Chatbot de recepção, SAC e FAQ para sites |
+| **Concierge Avançado** | Sob consulta | WhatsApp, Agendamento, Multicanal, CRM integrado |
+
+> **Nota de Transparência:** Funcionalidades avançadas (WhatsApp, Agendamento, Multicanal, Integração com CRM) são negociadas à parte, dependendo da demanda e complexidade de cada projeto. Sem letras miúdas.
+
+### Fluxo de Conversão Centralizado
+
+Todo o tráfego do Showcase é direcionado para **[hub.encontrodagua.com](https://hub.encontrodagua.com)**:
+
+```
+Showcase (portfólio vivo)
+  └─> CTA Principal: hub.encontrodagua.com (planos e preços)
+  └─> CTA Estratégico: WhatsApp Business (5592992557600) + msg de contexto
+  └─> Amazô Bubble: qualificação automática de leads
+```
+
+---
+
+## 🔗 Links Estratégicos de Conversão
 
 | Destino | Link |
 | --- | --- |
@@ -244,6 +268,6 @@ Projeto desenvolvido para o **Encontro d'Água Hub**. Todos os direitos reservad
 
 ---
 
-**Desenvolvido com ❤️ e biomimética** | Versão V38 | Março–Abril 2026
+**Desenvolvido com ❤️ e biomiмética** | Versão V42 | Abril 2026
 
-[🌿 Showcase](https://lidimoura.github.io/amazo.ia-showcase/) · [🛍️ Vitrine](https://link.encontrodagua.com/vitrine) · [🌐 Hub](https://hub.encontrodagua.com) · [👩‍💻 LinkedIn](https://www.linkedin.com/in/lidimoura/) · [💻 GitHub](https://github.com/lidimoura)
+[Showcase](https://lidimoura.github.io/amazo.ia-showcase/) · [Hub & Preços](https://hub.encontrodagua.com) · [LinkedIn](https://www.linkedin.com/in/lidimoura/) · [GitHub](https://github.com/lidimoura)
