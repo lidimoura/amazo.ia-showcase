@@ -1,9 +1,9 @@
-# 📝 DEVLOG — Showcase: Agente Amazô | V33
+# 📝 DEVLOG — Showcase: Agente Amazô | V38
 
-**Arquiteta & Dev:** Lídi Moura (Manauara)
+**Arquiteta & Dev:** Lídi Moura — Arquiteta de Soluções & Dev, formada em Psicologia (UX/Estratégia)
 **Pair Programming:** Claude Sonnet 4.6 (Thinking)
 **Período:** Março – Abril 2026
-**Status:** ✅ Ativo em Produção
+**Status:** ✅ Ativo em Produção | 💾 Pronto para Migração de Hardware
 
 ---
 
@@ -11,7 +11,27 @@
 
 > Nascido em Manaus, liderado por uma mulher da floresta. A Amazônia ensina: **abundância e zero desperdício** são o mesmo princípio. Este projeto é prova viva disso.
 
-**Arquiteta:** Lídi Moura — Dev Manauara, heutagoga e arquiteta de soluções IA para pequenos negócios e parceiros sociais.
+**Arquiteta:** Lídi Moura — Arquiteta de Soluções & Dev, formada em Psicologia (UX/Estratégia). Heutaóloga e arquiteta de soluções IA para pequeños negócios e parceiros sociais.
+
+### 🎯 Categorias de Solução Atendidas
+
+| # | Categoria | Público-Alvo |
+|---|---|---|
+| 1 | **Profissionais da Saúde** | Médicos, Terapeutas, Clínicas |
+| 2 | **Empreendedores e Negócios Locais** | Comercáos, Serviços, Startups locais |
+| 3 | **Profissionais Liberais e Autônomos** | Advogados, Contadores, Coaches, Consultores |
+
+### 🔑 Lógica de Acesso (Hub)
+
+| Fluxo | Comportamento |
+|---|---|
+| **Chave VIP** | Código `provadagua` libera Login/Cadastro direto no CRM |
+| **Lead Orgânico** | Formulário de captação obrigatório antes do acesso |
+| **Trial 7 dias** | Ativado após onboarding via Stripe |
+
+### 🔒 Segurança Multi-tenant
+
+O sistema possui isolamento completo entre leads e tenants. Cada usuário como **Amanda** (exemplo de lead orgânico) opera em namespace isolado via Supabase Row Level Security (RLS). Nenhum dado cruza entre tenants.
 
 ---
 
@@ -242,15 +262,39 @@ amazo.ia-showcase/
 
 ---
 
-## ✍️ Créditos
+## 🚀 V38 — Cleanup UI, Docs & Hardware Migration Sync
 
-**Arquiteta & Dev Manauara:** [Lídi Moura](https://www.linkedin.com/in/lidimoura/)
+**Data:** 10 de Abril de 2026
+**Tipo:** Manutenção, UI Cleanup, Sincro de Documentação
+
+### O que foi feito nesta versão:
+
+- ✅ **Footer consolidado**: removida duplicidade; mantido apenas o footer profissional © 2026
+- ✅ **Typebot Bubble**: garantido carregamento do script + `z-index: 9999` no CSS e inline override para visibilidade acima do glassmorphism
+- ✅ **Autoridade documentada**: Lídi Moura é Arquiteta de Soluções & Dev, formada em Psicologia (UX/Estratégia)
+- ✅ **Categorias de solução mapeadas**: Saúde, Negócios Locais, Profissionais Liberais
+- ✅ **Lógica de acesso documentada**: Chave VIP `provadagua` vs. formulário orgânico
+- ✅ **Segurança Multi-tenant validada**: isolamento RLS entre leads (ex: Amanda) confirmado
+- ✅ **Docs atualizados**: README.md, DEVLOG.md, USER_GUIDE.md
+
+### ⚠️ Pendências Registradas para próxima sprint:
+
+| Item | Status | Notas |
+|------|--------|-------|
+| **Integração Stripe** | 🔴 Pendente | Checkout do Trial/Plano ainda não conectado |
+| **Google Analytics (GA4)** | 🔴 Pendente | Tracking de conversão e eventos não implementados |
+
+---
+
+## ✅ Créditos
+
+**Arquiteta & Dev:** [Lídi Moura](https://www.linkedin.com/in/lidimoura/) — Arquiteta de Soluções & Dev, Psicologia (UX/Estratégia)
 **Pair Programming IA:** Claude Sonnet 4.6 (Thinking)
 **Hub:** [hub.encontrodagua.com](https://hub.encontrodagua.com)
 **Vitrine:** [link.encontrodagua.com/vitrine](https://link.encontrodagua.com/vitrine)
 
 ---
 
-**Última atualização:** 31 de Março / 1° de Abril de 2026
+**Última atualização:** 10 de Abril de 2026
 **Deploy:** [GitHub Pages](https://lidimoura.github.io/amazo.ia-showcase/)
-**Versão:** V33 — Identidade Manauara & Ecosssistema Hub
+**Versão:** V38 — UI Cleanup & Hardware Migration Sync

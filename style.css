@@ -695,9 +695,33 @@ footer {
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     text-align: left;
 }
-.footer-copy { font-size: 0.8rem; color: var(--text-muted); }
+.footer-copy { font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem; }
 .footer-copy a { color: var(--text-muted); }
 .footer-copy a:hover { color: var(--acai-purple); }
+
+/* Footer links (inside footer-content) */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+    margin: 1.25rem 0;
+}
+.footer-links a {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color var(--dur-fast) var(--ease);
+}
+.footer-links a:hover { color: var(--acai-purple); }
+
+/* Typebot bubble — z-index override para ficar acima do glassmorphism */
+typebot-bubble,
+typebot-standard,
+#typebot-bubble-button,
+.typebot-button {
+    z-index: 9999 !important;
+}
 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; }

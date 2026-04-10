@@ -1,7 +1,7 @@
 # 🌿 Showcase: Agente Amazô | Encontro d'Água Hub
 
 ![Status](https://img.shields.io/badge/status-produção-brightgreen?style=for-the-badge)
-![Versão](https://img.shields.io/badge/versão-V33-blueviolet?style=for-the-badge)
+![Versão](https://img.shields.io/badge/versão-V38-blueviolet?style=for-the-badge)
 ![Deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-blue?style=for-the-badge)
 ![Idiomas](https://img.shields.io/badge/idiomas-PT%20%7C%20EN%20%7C%20ES-orange?style=for-the-badge)
 
@@ -33,7 +33,7 @@
 | Item | Descrição / Description |
 | --- | --- |
 | **Empresa / Company** | Encontro d'Água Hub |
-| **Projeto / Project** | Showcase: Agente Amazô — V33 |
+| **Projeto / Project** | Showcase: Agente Amazô — V38 |
 | **Arquiteta / Architect** | [Lídi Moura](https://www.linkedin.com/in/lidimoura/) — Dev Manauara |
 | **Status** | ✅ Ativo em Produção / Active in Production |
 | **Showcase Web** | [lidimoura.github.io/amazo.ia-showcase](https://lidimoura.github.io/amazo.ia-showcase/) |
@@ -47,9 +47,9 @@
 
 ## 🌿 Identidade Manauara & Biomimética
 
-Lídi Moura é **Dev e Arquiteta de Soluções Manauara** — formada pelo ecossistema mais diverso do planeta, onde a floresta ensina que **abundância e zero desperdício** não são opostos, são princípios do mesmo sistema vivo.
+Lídi Moura é **Arquiteta de Soluções & Dev** — formada em **Psicologia (UX/Estratégia)**, nascida em **Manaus (AM)**, capital da Amazônia. Ela aplica sua formação em comportamento humano diretamente na arquitetura de produtos digitais e Concierges de IA para pequenos negócios.
 
-O Encontro d'Água Hub é inspirado nessa lógica biomimérica:
+O Encontro d'Água Hub é inspirado na lógica biomímica:
 
 - 🌊 **Abundância**: soluções generosas, completas e escaláveis
 - ♻️ **Zero Desperdício**: cada hora de trabalho vira produto, documentação e legado
@@ -98,6 +98,28 @@ A Amazô é a **fronteira de entrada** do CRM IA-First do Hub. Tudo que ela capt
 - 🗃️ **Supabase Backend**: persistência segura e escalável
 
 Acesse para QA/Validação: **[prova.encontrodagua.com/showcase](https://prova.encontrodagua.com/showcase)**
+
+---
+
+## 🎯 Públicos Atendidos — Categorias de Solução
+
+| # | Categoria | Público-Alvo |
+|---|---|---|
+| 1 | **Profissionais da Saúde** | Médicos, Terapeutas, Clínicas, Psicólogos |
+| 2 | **Empreendedores e Negócios Locais** | Comércios, Serviços, Restaurantes, Startups locais |
+| 3 | **Profissionais Liberais e Autônomos** | Advogados, Contadores, Coaches, Consultores |
+
+## 🔑 Lógica de Acesso ao Hub
+
+| Fluxo | Comportamento |
+|---|---|
+| **Chave VIP** | Código `provadagua` libera Login/Cadastro direto no CRM |
+| **Lead Orgânico** | Formulário de captação obrigatório antes do acesso |
+| **Trial 7 dias** | Ativado após onboarding via Stripe |
+
+## 🔒 Segurança Multi-tenant
+
+Cada tenant (cliente da Amazô como serviço) opera em namespace completamente isolado via **Supabase Row Level Security (RLS)**. Leads orgânicos como **Amanda** (exemplo) nunca têm acesso a dados de outros tenants.
 
 ---
 
@@ -222,6 +244,6 @@ Projeto desenvolvido para o **Encontro d'Água Hub**. Todos os direitos reservad
 
 ---
 
-**Desenvolvido com ❤️ e biomimética** | Versão V33 | Março–Abril 2026
+**Desenvolvido com ❤️ e biomimética** | Versão V38 | Março–Abril 2026
 
 [🌿 Showcase](https://lidimoura.github.io/amazo.ia-showcase/) · [🛍️ Vitrine](https://link.encontrodagua.com/vitrine) · [🌐 Hub](https://hub.encontrodagua.com) · [👩‍💻 LinkedIn](https://www.linkedin.com/in/lidimoura/) · [💻 GitHub](https://github.com/lidimoura)
