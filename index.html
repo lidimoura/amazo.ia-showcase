@@ -18,7 +18,8 @@
     <!-- ===== HEADER ===== -->
     <header class="main-header" id="top">
         <div class="logo">
-            <span class="logo-icon">🌊</span>
+            <img src="https://raw.githubusercontent.com/lidimoura/encontro-dagua-hub-digital/main/public/logos/logo-icon-gold-transp.png" alt="Hub Logo" class="logo-img" loading="eager" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+            <span class="logo-icon logo-icon-fallback" style="display:none">🌊</span>
             <span>Encontro d'Água Hub</span>
         </div>
         <nav id="main-nav">
@@ -148,6 +149,11 @@
                 <div class="card-icon">🎯</div>
                 <h3 data-i18n="presentation.challenge.title">O Desafio Estratégico</h3>
                 <p data-i18n="presentation.challenge.desc">Criar um portfólio vivo que demonstre a capacidade de automação do Hub. A Amazô não é apenas um chatbot — é uma SDR (Sales Development Representative) que qualifica leads, apresenta o Link d'Água e converte interessados em clientes reais, usando linguagem humana e acessível.</p>
+                <!-- Logo Link d'Água -->
+                <div class="product-badge">
+                    <img src="https://raw.githubusercontent.com/lidimoura/link-dagua/main/public/logo-dark.png" alt="Link d'Água CRM" class="product-logo" loading="lazy" onerror="this.style.display='none'">
+                    <span class="product-label">CRM de Leads</span>
+                </div>
             </div>
             <div class="amazo-profile-section">
                 <img src="./assets/mazo.jpeg" alt="Amazô — Vista aproximada" class="amazo-inline-img" loading="lazy">
@@ -276,16 +282,82 @@
             <div class="cta-final">
                 <h3 data-i18n="cta.final.title">Pronto para ter sua própria Amazô?</h3>
                 <p data-i18n="cta.final.desc">Cada negócio merece uma IA com a sua cara. Vamos construir juntos.</p>
-                <button class="cta-button primary large" id="btnChatFinal" data-i18n="cta.final.btn">Iniciar meu Projeto →</button>
+                <a href="https://wa.me/5592991482610?text=Ol%C3%A1%2C+Lidi%21+Vim+pelo+Showcase+da+Amaz%C3%B4+e+quero+saber+mais+sobre+minha+pr%C3%B3pria+IA+Concierge." target="_blank" rel="noopener noreferrer" class="cta-button primary large" id="btnChatFinal" data-i18n="cta.final.btn">Iniciar meu Projeto →</a>
             </div>
         </section>
     </main>
+
+        <!-- ===== FAQ ACCORDION ===== -->
+        <section id="faq" class="content-section faq-section fade-in">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Perguntas Frequentes</h2>
+                <p class="section-desc">Tudo que você precisa saber antes de começar.</p>
+            </div>
+
+            <div class="faq-accordion">
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-q-icon">⏱</span>
+                        <span>Como funciona o Ciclo de 5 dias?</span>
+                        <span class="faq-chevron">▾</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Da conversa ao lançamento em <strong>5 dias úteis</strong>. O ciclo é dividido em:</p>
+                        <ol class="faq-list">
+                            <li><strong>Dia 1 — Briefing:</strong> Entendemos sua dor e mapeamos a personalidade da IA.</li>
+                            <li><strong>Dia 2–3 — Build:</strong> Configuramos a Amazô com seu nicho, tom de voz e base de conhecimento.</li>
+                            <li><strong>Dia 4 — Provad'água (QA):</strong> Você testa o fluxo no celular antes de ir ao ar.</li>
+                            <li><strong>Dia 5 — Showcase:</strong> Entrega oficial + integração com seu CRM e WhatsApp.</li>
+                        </ol>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-q-icon">🏥</span>
+                        <span>Quais nichos são atendidos?</span>
+                        <span class="faq-chevron">▾</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>A Amazô foi arquitetada para <strong>3 categorias estratégicas</strong>:</p>
+                        <ul class="faq-list">
+                            <li><strong>Saúde:</strong> Médicos, Psicólogos, Terapeutas, Nutricionistas, Clínicas.</li>
+                            <li><strong>Negócios Locais:</strong> Comércios, Restaurantes, Salões, Serviços, Startups locais.</li>
+                            <li><strong>Autônomos:</strong> Advogados, Contadores, Coaches, Consultores, Arquitetos.</li>
+                        </ul>
+                        <p>Cada nicho recebe um <strong>Modo Concierge personalizado</strong>: identidade, tom de voz e base de conhecimento 100% configurados.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-q-icon">🔒</span>
+                        <span>Como funciona a segurança Multi-tenant?</span>
+                        <span class="faq-chevron">▾</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>O sistema garante <strong>isolamento completo entre clientes</strong>:</p>
+                        <ul class="faq-list">
+                            <li><strong>Row Level Security (RLS):</strong> Supabase PostgreSQL — cada cliente vê apenas seus próprios dados.</li>
+                            <li><strong>Namespace isolado:</strong> Leads e conversas de cada tenant operam em ambiente 100% separado.</li>
+                            <li><strong>Autenticação JWT:</strong> Tokens de sessão por cliente via Supabase Auth.</li>
+                            <li><strong>Edge Functions:</strong> Validações server-side antes de qualquer acesso a dados.</li>
+                        </ul>
+                        <p><strong>Garantia:</strong> Nenhum dado de um cliente cruza para outro — nem via API, nem via interface.</p>
+                    </div>
+                </details>
+
+            </div>
+        </section>
 
     <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
-                <span class="logo-icon">🌊</span>
+                <img src="https://raw.githubusercontent.com/lidimoura/encontro-dagua-hub-digital/main/public/logos/logo-icon-gold-transp.png" alt="Hub Logo" class="footer-logo-img" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+                <span class="logo-icon logo-icon-fallback" style="display:none">🌊</span>
                 <strong>Encontro d'Água Hub</strong>
             </div>
             <p class="footer-tagline" data-i18n="footer.tagline">Tecnologia com propósito. IA com alma.</p>
@@ -314,10 +386,21 @@
     <!-- Typebot Bubble Script -->
     <script src="./script.js"></script>
 
-    <!-- Typebot z-index override (acima do glassmorphism) -->
+    <!-- Typebot: força visibilidade absoluta e z-index máximo -->
     <style>
-        typebot-bubble, typebot-standard, #typebot-bubble-button, .typebot-button {
-            z-index: 9999 !important;
+        typebot-bubble,
+        typebot-bubble::part(bubble-button),
+        typebot-standard,
+        #typebot-bubble-button,
+        .typebot-button,
+        [data-typebot-bubble],
+        typebot-bubble > div,
+        typebot-bubble > button {
+            z-index: 2147483647 !important;
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            pointer-events: auto !important;
         }
     </style>
 </body>

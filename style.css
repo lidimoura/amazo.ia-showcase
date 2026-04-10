@@ -1,5 +1,5 @@
 /* ============================================================
-   AMAZÔ.IA SHOWCASE — V34 PREMIUM
+   AMAZÔ.IA SHOWCASE — V39 PREMIUM
    Paleta: Tech Amazônico · Dark Mode · Glassmorphism
    ============================================================ */
 
@@ -124,6 +124,15 @@ em { color: var(--areia-gold); font-style: italic; }
     white-space: nowrap;
 }
 .logo-icon { font-size: 1.4rem; }
+.logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: drop-shadow(0 0 6px rgba(240,184,100,0.4));
+    transition: filter var(--dur-fast) var(--ease);
+}
+.logo:hover .logo-img { filter: drop-shadow(0 0 10px rgba(240,184,100,0.7)); }
 
 /* Nav */
 #main-nav {
@@ -717,11 +726,139 @@ footer {
 
 /* Typebot bubble — z-index override para ficar acima do glassmorphism */
 typebot-bubble,
+typebot-bubble > *,
+typebot-bubble::part(bubble-button),
 typebot-standard,
 #typebot-bubble-button,
 .typebot-button {
-    z-index: 9999 !important;
+    z-index: 2147483647 !important;
 }
+
+/* ── PRODUCT BADGE (Link d'Água logo dentro do card) ── */
+.product-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    padding: 0.6rem 1rem;
+    background: rgba(56, 189, 248, 0.06);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: var(--radius-sm);
+    transition: border-color var(--dur-fast) var(--ease);
+}
+.product-badge:hover { border-color: rgba(56, 189, 248, 0.4); }
+.product-logo {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    max-width: 140px;
+    filter: brightness(1.1);
+}
+.product-label {
+    font-size: 0.8rem;
+    color: var(--rio-azul);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* ── FOOTER LOGO ── */
+.footer-logo-img {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(240,184,100,0.35));
+}
+
+/* ── FAQ SECTION ── */
+.faq-section {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 5rem 5%;
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+.faq-item[open] {
+    border-color: rgba(200, 120, 255, 0.4);
+    box-shadow: 0 4px 24px rgba(200, 120, 255, 0.08);
+}
+.faq-item[open] .faq-chevron { transform: rotate(180deg); }
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    transition: background var(--dur-fast) var(--ease);
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question:hover { background: rgba(200, 120, 255, 0.06); }
+
+.faq-q-icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+    width: 2rem;
+    text-align: center;
+    filter: drop-shadow(0 0 4px rgba(200,120,255,0.3));
+}
+.faq-question > span:nth-child(2) {
+    flex: 1;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+.faq-chevron {
+    flex-shrink: 0;
+    font-size: 1rem;
+    color: var(--acai-purple);
+    transition: transform var(--dur-med) var(--ease);
+}
+
+.faq-answer {
+    padding: 0 1.5rem 1.5rem 4.2rem;
+    animation: faqOpen var(--dur-med) var(--ease);
+}
+@keyframes faqOpen {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.faq-answer p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.85rem;
+}
+.faq-list {
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+.faq-list li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    line-height: 1.55;
+}
+.faq-list li:last-child { border-bottom: none; }
+.faq-list li strong { color: var(--text-primary); }
 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; }

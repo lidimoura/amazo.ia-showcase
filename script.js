@@ -1,6 +1,6 @@
 /**
- * Amazô.ia Showcase — V34
- * Script principal: i18n trilíngue, carrossel, accordion, Typebot Bubble, nav ativa
+ * Amazô.ia Showcase — V39
+ * Script principal: i18n trilíngue, carrossel, accordion, FAQ, Typebot Bubble, nav ativa
  */
 
 /* ======================================================
@@ -14,6 +14,7 @@ const translations = {
         "nav.briefing":      "Briefing",
         "nav.qa":            "QA",
         "nav.metodologia":   "Metodologia",
+        "nav.faq":           "FAQ",
 
         // Hero
         "hero.badge":        "CS Ativo — Disponível Agora",
@@ -485,12 +486,28 @@ function initSmoothScroll() {
 }
 
 /* ======================================================
-   TYPEBOT BUBBLE (CS ATIVO)
+   TYPEBOT BUBBLE (CS ATIVO) — FIX V39
    ====================================================== */
 function initTypebotBubble() {
-    // Verificar preferência de movimento reduzido
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Injetar CSS de visibilidade forçada antes mesmo do script carregar
+    const forceStyle = document.createElement('style');
+    forceStyle.id = 'typebot-force-visible';
+    forceStyle.textContent = [
+        'typebot-bubble,',
+        'typebot-bubble > *,',
+        'typebot-bubble::part(bubble-button),',
+        '#typebot-bubble-button,',
+        '.typebot-button {',
+        '    z-index: 2147483647 !important;',
+        '    display: block !important;',
+        '    opacity: 1 !important;',
+        '    visibility: visible !important;',
+        '    pointer-events: auto !important;',
+        '}'
+    ].join('\n');
+    document.head.appendChild(forceStyle);
 
+    // Carregar o Typebot como módulo ES
     const script = document.createElement('script');
     script.type = 'module';
     script.textContent = `
@@ -511,15 +528,27 @@ Typebot.initBubble({
     avatarUrl: "./assets/amazo.jpeg",
   },
 });
+
+// Expor instância no window para os CTAs poderem abrir
+window.__TypebotInstance = Typebot;
 `;
     document.body.appendChild(script);
 
-    // CTA buttons → abrir bubble
-    ['btnChat', 'btnChatFinal'].forEach(id => {
-        document.getElementById(id)?.addEventListener('click', () => {
-            window.Typebot?.toggle?.();
-        });
+    // Botão Hero: abrir bubble
+    document.getElementById('btnChat')?.addEventListener('click', () => {
+        // Tentar via instância exposta ou via elemento DOM nativo
+        if (window.__TypebotInstance?.open) {
+            window.__TypebotInstance.open();
+        } else {
+            // Fallback: simular clique no botão nativo do Typebot
+            const bubble = document.querySelector('typebot-bubble');
+            const btn = bubble?.shadowRoot?.querySelector('button') ||
+                        document.querySelector('#typebot-bubble-button') ||
+                        document.querySelector('.typebot-button');
+            btn?.click();
+        }
     });
+    // btnChatFinal agora é um <a> para WhatsApp — nenhuma acao necessária aqui
 }
 
 /* ======================================================
