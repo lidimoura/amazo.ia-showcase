@@ -1,8 +1,8 @@
-# 📖 USER GUIDE — Showcase: Agente Amazô | V38
+# 📖 USER GUIDE — Showcase: Agente Amazô | V42
 
-**Arquiteta & Dev:** Lídi Moura — Arquiteta de Soluções & Dev, formada em Psicologia (UX/Estratégia)
-**Versão:** V38 | **Data:** Abril 2026
-**Status:** ✅ Ativo em Produção | 💾 Pronto para Migração de Hardware
+**Arquiteta & Dev:** Lídi Moura — Arquiteta de Soluções & Dev Fullstack Low-Code, formada em Psicologia (UX/Estratégia Comportamental)
+**Versão:** V42 | **Data:** Abril 2026
+**Status:** ✅ Ativo em Produção | 🚀 Hub como destino central de conversão
 
 ---
 
@@ -69,6 +69,31 @@ O sistema está arquitetado com **isolamento completo entre tenants**:
 
 ---
 
+## 💰 Modelo de Negócio — Oferta de Lançamento
+
+### Preços
+
+| Plano | Preço | Inclui |
+|---|---|---|
+| **Concierge Essencial** | A partir de **R$ 80** | Chatbot de recepção, SAC e FAQ para sites |
+| **Concierge Avançado** | Sob consulta | WhatsApp, Agendamento, Multicanal, CRM integrado |
+
+> **Transparência Total:** Funcionalidades avançadas (WhatsApp, Agendamento, Multicanal, CRM) são negociadas à parte com orçamento personalizado. Sem letras miúdas.
+
+### Fluxo de Conversão V42
+
+Todo o tráfego é centralizado em **[hub.encontrodagua.com](https://hub.encontrodagua.com)**:
+
+```
+Showcase (portfólio vivo)
+  ├─> Amazô Bubble (Typebot): qualifica lead organicamente
+  ├─> Botão Hero Secundário: hub.encontrodagua.com → ver planos
+  ├─> CTA Final Hub: hub.encontrodagua.com
+  └─> CTA WhatsApp Business: wa.me/5592992557600 + msg de contexto
+```
+
+---
+
 ## 🌿 Como Usar o Showcase
 
 ### Demonstração da Amazô
@@ -108,11 +133,11 @@ cd amazo.ia-showcase
 
 ```
 amazo.ia-showcase/
-├── index.html          → Showcase principal (PT/EN/ES)
-├── style.css           → Glassmorphism, Dark Mode, paleta Tech Amazônico
-├── script.js           → i18n, carrossel, Typebot Bubble, nav
-├── README.md           → Documentação V38
-├── DEVLOG.md           → Timeline e contexto técnico V38
+├── index.html          → Showcase principal (PT/EN/ES) — V42
+├── style.css           → Glassmorphism, Dark Mode, Pricing, paleta Tech Amazônico
+├── script.js           → i18n PT/EN/ES, carrossel, Typebot Bubble, nav — V42
+├── README.md           → Documentação V42
+├── DEVLOG.md           → Timeline e contexto técnico V42
 ├── USER_GUIDE.md       → Este arquivo
 ├── SETUP_GUIDE.md      → Guia de setup e deploy
 └── assets/
@@ -144,12 +169,13 @@ URL produção: `https://lidimoura.github.io/amazo.ia-showcase/`
 
 ## ⚠️ Pendências Abertas (Próxima Sprint)
 
-| Item | Prioridade | Responsável |
-|------|-----------|-------------|
-| **Integração Stripe** | 🔴 Alta | Lídi Moura |
-| **Google Analytics GA4** | 🔴 Alta | Lídi Moura |
-| **Supabase long-term memory** | 🟡 Média | Lídi Moura |
-| **Dark/Light mode toggle** | 🟢 Baixa | Lídi Moura |
+| Item | Prioridade | Status |
+|------|-----------|--------|
+| **Google Analytics GA4** | 🔴 Alta | Pendente |
+| **Integração Stripe** | 🔴 Alta | Pendente |
+| **Trial 7 dias automático** | 🟡 Média | Em progresso |
+| **Supabase long-term memory** | 🟡 Média | Em progresso |
+| **Dark/Light mode toggle** | 🟢 Baixa | Planejado |
 
 ---
 
